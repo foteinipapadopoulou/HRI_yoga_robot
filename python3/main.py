@@ -3,6 +3,8 @@ import stk.events
 import stk.services
 import time
 
+MAX_TIME_POSE = 5
+
 class NaoYogaInstructor:
 	def __init__(self):
 		self.python27bridge = stk.python27bridge.Python27Bridge()
@@ -23,6 +25,10 @@ class NaoYogaInstructor:
 		self.s.ALTracker.registerTarget(targetName, faceWidth)
 		self.s.ALTracker.track(targetName)
 		self.s.ALTracker.setMode("Head")
+
+		# Photo capture
+        self.s.ALPhotoCapture.setResolution(2)
+        self.s.ALPhotoCapture.setPictureFormat("jpg")
 
 		self.s.ALTextToSpeech.say("Hello, world!")
 
@@ -54,24 +60,43 @@ class NaoYogaInstructor:
 		for pose in self.poses:
 			if self.stop_flag:
 				break
-			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.")
-			self.perform_pose(pose)
-			time.sleep(5)
+			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.") # async
+			self._perform_pose(pose)
+			time.sleep(MAX_TIME_POSE)
 
 	def _yoga_with_feedback(self):
 		self.s.ALTextToSpeech.say("Let's start the yoga session with feedback!")
 		for pose in self.poses:
 			if self.stop_flag:
 				break
-			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.")
-			self.perform_pose(pose)
-			time.sleep(5)
-			self.provide_feedback(pose)
+			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.") # async
+			self._perform_pose(pose)
+			self._feedback_loop(pose)
 
 	def _perform_pose(self, pose):
 		pass
 
-	def _provide_feedback(self, pose):
+	def _feedback_loop(self, pose):
+		start_time = time.time()
+		while True:
+			if self.stop_flag:
+				break
+			elapsed_time = time.time() - start_time
+			if elapsed_time > MAX_TIME_POSE:
+                break
+			image_file_path = self._capture_pose_image(pose)
+			analysis = self._analyze_pose(pose, image_file_path)
+			self._give_feedback(analysis)
+			time.sleep(1)
+		
+	def _capture_pose_image(self, pose):
+		file_path_array = self.s.ALPhotoCapture.takePicture("/home/nao/recordings/cameras/", pose, overwrite=True)
+        return file_path_array[0]
+
+	def _analyze_pose(self, pose, image_file_path):
+		pass
+
+	def _give_feedback(self, analysis):
 		pass
 
 if __name__ == "__main__":
@@ -82,4 +107,3 @@ if __name__ == "__main__":
         print("Interrupted by user")
 		naoYogaInstructor.stop()
         print("Stopped")
-
