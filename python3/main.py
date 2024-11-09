@@ -11,7 +11,18 @@ class NaoYogaInstructor:
 		
 		self.running = False
 		self.stop_flag = False
-		self.poses = [] # [String]
+		self.poses = ["Posture1", "Posture2", "Posture3"] # [String]
+
+		# Wake up robot
+		self.s.ALMotion.wakeUp()
+		self.s.ALRobotPosture.goToPosture("StandInit", 0.5)
+
+		# Track face
+		targetName = "Face"
+		faceWidth = 0.1
+		self.s.ALTracker.registerTarget(targetName, faceWidth)
+		self.s.ALTracker.track(targetName)
+		self.s.ALTracker.setMode("Head")
 
 		self.s.ALTextToSpeech.say("Hello, world!")
 
@@ -37,15 +48,14 @@ class NaoYogaInstructor:
 			self.s.ALTextToSpeech.say("Received stop command.")
 			while self.running:
 				time.sleep(0.1)
-			self.s.ALTextToSpeech.say("Bye, world!")
 
 	def _yoga_without_feedback(self):
 		self.s.ALTextToSpeech.say("Let's start the yoga session!")
 		for pose in self.poses:
 			if self.stop_flag:
 				break
+			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.")
 			self.perform_pose(pose)
-			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
 			time.sleep(5)
 
 	def _yoga_with_feedback(self):
@@ -53,8 +63,8 @@ class NaoYogaInstructor:
 		for pose in self.poses:
 			if self.stop_flag:
 				break
+			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.")
 			self.perform_pose(pose)
-			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
 			time.sleep(5)
 			self.provide_feedback(pose)
 
@@ -66,4 +76,10 @@ class NaoYogaInstructor:
 
 if __name__ == "__main__":
 	naoYogaInstructor = NaoYogaInstructor()
-	naoYogaInstructor.start(feedback=True)
+	try:
+		naoYogaInstructor.start(feedback=True)
+	except KeyboardInterrupt:
+        print("Interrupted by user")
+		naoYogaInstructor.stop()
+        print("Stopped")
+
