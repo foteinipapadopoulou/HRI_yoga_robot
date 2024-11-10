@@ -2,77 +2,109 @@ import stk.python27bridge
 import stk.events
 import stk.services
 import time
-import logging
 
 MAX_TIME_POSE = 5
+INTEVAL_TIME_PHOTO = 1
+IMAGE_SAVE_PATH = "/home/nao/recordings/cameras/"
 
 class NaoYogaInstructor:
-	def __init__(self):
+	def __init__(self, poses):
 		self.python27bridge = stk.python27bridge.Python27Bridge()
 		self.events = stk.events.EventHelper(self.python27bridge)
 		self.s = stk.services.ServiceCache(self.python27bridge)
 		
+		self.poses = poses if poses is not None else ["Posture1", "Posture2", "Posture3"]
 		self.running = False
 		self.stop_flag = False
-		self.poses = ["Posture1", "Posture2", "Posture3"] # [String]
 
-		# Wake up robot
+	def __enter__(self):
+		# Wake up Nao
 		self.s.ALMotion.wakeUp()
 		self.s.ALRobotPosture.goToPosture("StandInit", 0.5)
-
-		# Track face
-		targetName = "Face"
-		faceWidth = 0.1
-		self.s.ALTracker.registerTarget(targetName, faceWidth)
-		self.s.ALTracker.track(targetName)
-		self.s.ALTracker.setMode("Head")
 
 		# Photo capture
 		self.s.ALPhotoCapture.setResolution(2)
 		self.s.ALPhotoCapture.setPictureFormat("jpg")
 
+		# Face tracker
+		target_name = "Face"
+		face_width = 0.1
+		self.s.ALTracker.registerTarget(target_name, face_width)
+		self.s.ALTracker.setMode("Head")
+		self.s.ALTracker.track(target_name)
+		
+		print("NaoYogaInstructor initialized!")
 		self.s.ALTextToSpeech.say("Hello, world!")
+		return self
+
+	def __exit__(self, exc_type, exc_value, traceback):
+		print("Shutting down NaoYogaInstructor...")
+		self._stop()
+
+		try:
+			self.s.ALTracker.stopTracker()
+			self.s.ALTracker.unregisterAllTargets()
+			print("Stopped tracker.")
+		except Exception as e:
+			print(f"Error stopping tracker: {e}")
+
+		try:
+			self.s.ALRobotPosture.goToPosture("Sit", 0.5)
+			self.s.ALRobotPosture.rest()
+			print("Nao is resting.")
+		except Exception as e:
+			print(f"Error setting Nao to rest: {e}")
+
+		try:
+			self.s.ALTextToSpeech.say("Goodbye. Shutting down now.")
+		except Exception as e:
+			print(f"Error with TextToSpeech: {e}")
+
+		print("NaoYogaInstructor shutdown complete.")
 
 	def start(self, feedback=False):
-		self.stop() # Stop any possible running session
+		self._stop() # Stop any possible running session
 
-		self.running = True
-		self.stop_flag = False
+		try:
+			if feedback:
+				self._yoga_with_feedback()
+			else:
+				self._yoga_without_feedback()
 
-		if feedback:
-			self._yoga_with_feedback()
-		else:
-			self._yoga_without_feedback()
+			if not self.stop_flag:
+				self.s.ALTextToSpeech.say("Session completed!")
+		finally:
+			self.running = False
 
-		if not self.stop_flag:
-			self.s.ALTextToSpeech.say("Session completed!")
-
-		self.running = False
-
-	def stop(self):
+	def _stop(self):
 		if self.running:
 			self.stop_flag = True
-			self.s.ALTextToSpeech.say("Received stop command.")
 			while self.running:
 				time.sleep(0.1)
 
 	def _yoga_without_feedback(self):
-		self.s.ALTextToSpeech.say("Let's start the yoga session!")
+		print("Starting yoga session without feedback.")
+		self.s.ALTextToSpeech.say("Let's start the yoga session without feedback!")
 		for pose in self.poses:
 			if self.stop_flag:
 				break
+			print(f"Performing pose: {pose}")
 			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
 			self._perform_pose(pose)
 			time.sleep(MAX_TIME_POSE)
+		print("Ended yoga session without feedback.")
 
 	def _yoga_with_feedback(self):
+		print("Starting yoga session with feedback.")
 		self.s.ALTextToSpeech.say("Let's start the yoga session with feedback!")
 		for pose in self.poses:
 			if self.stop_flag:
 				break
+			print(f"Performing pose: {pose}")
 			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
 			self._perform_pose(pose)
 			self._feedback_loop(pose)
+		print("Ended yoga session with feedback.")
 
 	def _perform_pose(self, pose):
 		pass
@@ -88,14 +120,18 @@ class NaoYogaInstructor:
 			image_file_path = self._capture_pose_image(pose)
 			analysis = self._analyze_pose(pose, image_file_path)
 			self._give_feedback(analysis)
-			time.sleep(1) # Remove this once self._analyse_pose() and self._give_feedback() are implemented
+			time.sleep(INTEVAL_TIME_PHOTO)
 		
 	def _capture_pose_image(self, pose):
-		file_path_array = self.s.ALPhotoCapture.takePicture("/home/nao/recordings/cameras/", pose, overwrite=True)
-		if file_path_array is None or not file_path_array:
-			logging.error("Failed to capture image.")
+		try:
+			file_path_array = self.s.ALPhotoCapture.takePicture(IMAGE_SAVE_PATH, pose, overwrite=True)
+			if file_path_array is None or not file_path_array:
+				print(f"Failed to capture image for {pose}: file_path_array is None or an empty array.")
+				return None
+			return file_path_array[0]
+		except Exception as e:
+			print(f"Error capturing image for {pose}: {e}")
 			return None
-		return file_path_array[0]
 
 	def _analyze_pose(self, pose, image_file_path):
 		pass
@@ -104,10 +140,8 @@ class NaoYogaInstructor:
 		pass
 
 if __name__ == "__main__":
-	naoYogaInstructor = NaoYogaInstructor()
-	try:
-		naoYogaInstructor.start(feedback=True)
-	except KeyboardInterrupt:
-		print("Interrupted by user")
-		naoYogaInstructor.stop()
-		print("Stopped")
+	with NaoYogaInstructor(poses=None) as naoYogaInstructor:
+		try:
+			naoYogaInstructor.start(feedback=True)
+		except KeyboardInterrupt:
+			print("Interrupted by user!")
