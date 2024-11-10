@@ -2,6 +2,7 @@ import stk.python27bridge
 import stk.events
 import stk.services
 import time
+import logging
 
 MAX_TIME_POSE = 5
 
@@ -60,7 +61,7 @@ class NaoYogaInstructor:
 		for pose in self.poses:
 			if self.stop_flag:
 				break
-			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.") # async
+			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
 			self._perform_pose(pose)
 			time.sleep(MAX_TIME_POSE)
 
@@ -69,7 +70,7 @@ class NaoYogaInstructor:
 		for pose in self.poses:
 			if self.stop_flag:
 				break
-			self.s.ALTextToSpeech.post.say(f"Now, {pose} pose.") # async
+			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
 			self._perform_pose(pose)
 			self._feedback_loop(pose)
 
@@ -87,10 +88,13 @@ class NaoYogaInstructor:
 			image_file_path = self._capture_pose_image(pose)
 			analysis = self._analyze_pose(pose, image_file_path)
 			self._give_feedback(analysis)
-			time.sleep(1)
+			time.sleep(1) # Remove this once self._analyse_pose() and self._give_feedback() are implemented
 		
 	def _capture_pose_image(self, pose):
 		file_path_array = self.s.ALPhotoCapture.takePicture("/home/nao/recordings/cameras/", pose, overwrite=True)
+		if file_path_array is None or not file_path_array:
+			logging.error("Failed to capture image.")
+			return None
 		return file_path_array[0]
 
 	def _analyze_pose(self, pose, image_file_path):
