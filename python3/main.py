@@ -2,65 +2,79 @@ import stk.python27bridge
 import stk.events
 import stk.services
 import time
+import logging
 
-MAX_TIME_POSE = 5
-INTEVAL_TIME_PHOTO = 1
-IMAGE_SAVE_PATH = "/home/nao/recordings/cameras/"
+from constants import *
+from utils import *
+
 
 class NaoYogaInstructor:
 	def __init__(self, poses):
 		self.python27bridge = stk.python27bridge.Python27Bridge()
 		self.events = stk.events.EventHelper(self.python27bridge)
 		self.s = stk.services.ServiceCache(self.python27bridge)
+		self.speechProxy = self.s.ALTextToSpeech
+		self.motionProxy = self.s.ALMotion
+		self.postureProxy = self.s.ALRobotPosture
+		self.photoCaptureProxy = self.s.ALPhotoCapture
+		self.activityLifeProxy = self.s.ALAutonomousLife
+		self.trackerProxy = self.s.ALTracker
+
+		logging.basicConfig(level=logging.INFO) # using of logging module to log messages on Choreographe console
+		self.logger = logging.getLogger(__name__)
+
+		self.activityLifeProxy.setState("disabled") # we need to disable autonomous life to control the robot's movements
 		
-		self.poses = poses if poses is not None else ["Posture1", "Posture2", "Posture3"]
+		self.poses = poses if poses is not None else ["warrior", "chair"] 
 		self.running = False
 		self.stop_flag = False
 
 	def __enter__(self):
 		# Wake up Nao
-		self.s.ALMotion.wakeUp()
-		self.s.ALRobotPosture.goToPosture("StandInit", 0.5)
-
+		self.motionProxy.wakeUp()
+		self.postureProxy.goToPosture("StandInit", 0.5)
+		time.sleep(MAX_TIME_POSE)
 		# Photo capture
-		self.s.ALPhotoCapture.setResolution(2)
-		self.s.ALPhotoCapture.setPictureFormat("jpg")
+		self.photoCaptureProxy.setResolution(2)
+		self.photoCaptureProxy.setPictureFormat("jpg")
 
 		# Face tracker
 		target_name = "Face"
 		face_width = 0.1
-		self.s.ALTracker.registerTarget(target_name, face_width)
-		self.s.ALTracker.setMode("Head")
-		self.s.ALTracker.track(target_name)
+		self.trackerProxy.registerTarget(target_name, face_width)
+		self.trackerProxy.setMode("Head")
+		self.trackerProxy.track(target_name)
 		
-		print("NaoYogaInstructor initialized!")
-		self.s.ALTextToSpeech.say("Hello, world!")
+		self.logger.info("NaoYogaInstructor initialized!")
+		self.speechProxy.say("Hello, world!")
 		return self
 
 	def __exit__(self, exc_type, exc_value, traceback):
-		print("Shutting down NaoYogaInstructor...")
+		self.logger.info("Shutting down NaoYogaInstructor...")
 		self._stop()
 
 		try:
-			self.s.ALTracker.stopTracker()
-			self.s.ALTracker.unregisterAllTargets()
-			print("Stopped tracker.")
+			self.trackerProxy.stopTracker()
+			self.trackerProxy.unregisterAllTargets()
+			self.logger.info("Stopped tracker.")
 		except Exception as e:
-			print(f"Error stopping tracker: {e}")
+			self.logger.error(f"Error stopping tracker: {e}")
 
 		try:
-			self.s.ALRobotPosture.goToPosture("Sit", 0.5)
-			self.s.ALRobotPosture.rest()
-			print("Nao is resting.")
+			self.postureProxy.goToPosture("Sit", 0.5)
+			self.postureProxy.rest()
+			self.logger.info("Nao is resting.")
 		except Exception as e:
-			print(f"Error setting Nao to rest: {e}")
+			self.logger.error(f"Error setting Nao to rest: {e}")
 
 		try:
-			self.s.ALTextToSpeech.say("Goodbye. Shutting down now.")
+			self.speechProxy.say("Goodbye. Shutting down now.")
 		except Exception as e:
-			print(f"Error with TextToSpeech: {e}")
+			self.logger.error(f"Error with TextToSpeech: {e}")
 
-		print("NaoYogaInstructor shutdown complete.")
+		self.logger.info("NaoYogaInstructor shutdown complete.")
+
+		# self.speechProxy.say("Hello, world")
 
 	def start(self, feedback=False):
 		self._stop() # Stop any possible running session
@@ -72,7 +86,7 @@ class NaoYogaInstructor:
 				self._yoga_without_feedback()
 
 			if not self.stop_flag:
-				self.s.ALTextToSpeech.say("Session completed!")
+				self.speechProxy.say("Session completed!")
 		finally:
 			self.running = False
 
@@ -83,31 +97,61 @@ class NaoYogaInstructor:
 				time.sleep(0.1)
 
 	def _yoga_without_feedback(self):
-		print("Starting yoga session without feedback.")
-		self.s.ALTextToSpeech.say("Let's start the yoga session without feedback!")
+		self.logger.info("Starting yoga session without feedback.")
+		self.speechProxy.say("Let's start the yoga session without feedback!")
 		for pose in self.poses:
 			if self.stop_flag:
 				break
-			print(f"Performing pose: {pose}")
-			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
+			self.logger.info(f"Performing pose: {pose}")
+			self.speechProxy.say(f"Now, {pose} pose.")
 			self._perform_pose(pose)
-			time.sleep(MAX_TIME_POSE)
-		print("Ended yoga session without feedback.")
+
+		self.logger.info("Ended yoga session without feedback.")
 
 	def _yoga_with_feedback(self):
-		print("Starting yoga session with feedback.")
-		self.s.ALTextToSpeech.say("Let's start the yoga session with feedback!")
+		self.logger.info("Starting yoga session with feedback.")
+		self.speechProxy.say("Let's start the yoga session with feedback!")
 		for pose in self.poses:
 			if self.stop_flag:
 				break
-			print(f"Performing pose: {pose}")
-			self.s.ALTextToSpeech.say(f"Now, {pose} pose.")
+			self.logger.info(f"Performing pose: {pose}")
+			self.speechProxy.say(f"Now, {pose} pose.")
 			self._perform_pose(pose)
 			self._feedback_loop(pose)
-		print("Ended yoga session with feedback.")
+		self.logger.info("Ended yoga session with feedback.")
 
 	def _perform_pose(self, pose):
-		pass
+		# set initial posture
+		initial_posture = get_initial_posture_for_pose(pose)
+		self.logger.info(f"Setting initial posture: {initial_posture}")
+		self.postureProxy.goToPosture("StandInit", 0.5)
+		time.sleep(MAX_TIME_POSE)
+
+		# get angles for pose
+		self.logger.info(f"Getting angles for pose: {pose}")
+		angles = get_angles_for_pose(pose)
+		self.logger.info(f"Angles for pose: {angles}")
+
+		# start nao saying instructions for pose
+		instructions = get_instructions_for_pose(pose)
+		self.logger.info(f"Nao will say the instructions for pose: {pose}")
+		self.speechProxy.say(instructions)
+		time.sleep(MAX_TIME_POSE)
+		
+		# set stiffness off and move nao to pose
+		self.logger.info(f"Set stiffness on for all joints.")
+		self._stiffness_on()
+		self.logger.info(f"Moving to pose: {pose}")
+		for key, value in angles.items():
+			self.motionProxy.setAngles(key, value, SPEED_POSE)
+		time.sleep(MAX_TIME_POSE)
+
+	def _stiffness_on(self):
+		# We use the "Body" name to signify the collection of all joints
+		pNames = "Body"
+		pStiffnessLists = 1.0
+		pTimeLists = 1.0
+		self.motionProxy.stiffnessInterpolation(pNames, pStiffnessLists, pTimeLists)
 
 	def _feedback_loop(self, pose):
 		start_time = time.time()
@@ -124,13 +168,13 @@ class NaoYogaInstructor:
 		
 	def _capture_pose_image(self, pose):
 		try:
-			file_path_array = self.s.ALPhotoCapture.takePicture(IMAGE_SAVE_PATH, pose, overwrite=True)
+			file_path_array = self.photoCaptureProxy.takePicture(IMAGE_SAVE_PATH, pose, overwrite=True)
 			if file_path_array is None or not file_path_array:
-				print(f"Failed to capture image for {pose}: file_path_array is None or an empty array.")
+				self.logger.info(f"Failed to capture image for {pose}: file_path_array is None or an empty array.")
 				return None
 			return file_path_array[0]
 		except Exception as e:
-			print(f"Error capturing image for {pose}: {e}")
+			self.logger.error(f"Error capturing image for {pose}: {e}")
 			return None
 
 	def _analyze_pose(self, pose, image_file_path):
@@ -142,6 +186,6 @@ class NaoYogaInstructor:
 if __name__ == "__main__":
 	with NaoYogaInstructor(poses=None) as naoYogaInstructor:
 		try:
-			naoYogaInstructor.start(feedback=True)
+			naoYogaInstructor.start(feedback=False)
 		except KeyboardInterrupt:
-			print("Interrupted by user!")
+			naoYogaInstructor.logger.error("Interrupted by user!")
