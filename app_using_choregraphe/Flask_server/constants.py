@@ -38,6 +38,5 @@ poses = {
     "corpse": {
         "image_path": "corpse.jpg",
     },
-    #TODO Add more poses here
     
 }
