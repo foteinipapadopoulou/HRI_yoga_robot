@@ -88,6 +88,23 @@
         </message>
     </context>
     <context>
+        <name>behavior_with_feedback/behavior.xar:/Tadasana (2)/Say</name>
+        <message>
+            <source>Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_with_feedback/behavior.xar:/Tadasana Old/Say</name>
+        <message>
+            <location filename="behavior_with_feedback/behavior.xar" line="0"/>
+            <source>Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</translation>
+        </message>
+    </context>
+    <context>
         <name>behavior_with_feedback/behavior.xar:/Tadasana/Feedback/Animated Say</name>
         <message>
             <source>Hello</source>
