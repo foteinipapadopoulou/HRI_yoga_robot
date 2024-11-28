@@ -25,10 +25,9 @@
             <translation type="obsolete">Bis zum nächsten Mal!</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Bye Bye! See you!</source>
             <comment>Text</comment>
-            <translation type="unfinished">Bye Bye! See you!</translation>
+            <translation type="obsolete">Bye Bye! See you!</translation>
         </message>
     </context>
     <context>
@@ -39,10 +38,9 @@
             <translation type="obsolete">Jetzt kommen wir zurück zur Bergposition und dann wechseln wir die Seiten.</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Now we come back to the mountain position and then we change sides.</source>
             <comment>Text</comment>
-            <translation type="unfinished">Now we come back to the mountain position and then we change sides.</translation>
+            <translation type="obsolete">Now we come back to the mountain position and then we change sides.</translation>
         </message>
     </context>
     <context>
@@ -53,10 +51,9 @@
             <translation type="obsolete">Gut gemacht! Tadasana ist eine wirksame Übung, um eure Körperhaltung und Entspannung zu verbessern. Wir machen weiter mit Virabhadrasana eins, bekannt als Krieger eins.</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</source>
             <comment>Text</comment>
-            <translation type="unfinished">Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</translation>
+            <translation type="obsolete">Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</translation>
         </message>
     </context>
     <context>
@@ -67,10 +64,9 @@
             <translation type="obsolete">Gut gemacht! Virabhadrasana eins ist eine gute Übung, um die Beine, Arme und Schultern zu stärken und die Körperhaltung zu verbessern. Wir machen weiter mit Virabhadrasana zwei, bekannt als Krieger zwei.</translation>
         </message>
         <message>
-            <location filename="behavior_1/behavior.xar" line="0"/>
             <source>Well done! Virabhadrasana one is a good pose to strengthen the legs, arms and shoulders and improve posture. We move on to Virabhadrasana two, known as warrior two.</source>
             <comment>Text</comment>
-            <translation type="unfinished">Well done! Virabhadrasana one is a good pose to strengthen the legs, arms and shoulders and improve posture. We move on to Virabhadrasana two, known as warrior two.</translation>
+            <translation type="obsolete">Well done! Virabhadrasana one is a good pose to strengthen the legs, arms and shoulders and improve posture. We move on to Virabhadrasana two, known as warrior two.</translation>
         </message>
     </context>
     <context>

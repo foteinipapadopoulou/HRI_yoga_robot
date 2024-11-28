@@ -14,7 +14,7 @@
     <Timeline enable="0">
       <BehaviorLayer name="behavior_layer1">
         <BehaviorKeyframe name="keyframe1" index="1">
-          <Diagram>
+          <Diagram scale="84.0896">
             <Box name="Warrior I " id="1" localization="8" tooltip="Timeline for the Yoga Pose Warrior I." x="770" y="97">
               <bitmap>media/images/box/movement/move.png</bitmap>
               <script language="4">
@@ -96,7 +96,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Put your left leg forward and bend it. The right leg is stretched out, the foot pointing outwards. Stretch your arms up, with your palms facing inwards. Try to pull your collarbone up.\nBreathe normally, let your thoughts flow.")]]>
+		self.onStopped("Put your left leg forward and bend it. The right leg is stretched out, the foot pointing outwards. Stretch your arms up, with your palms facing inwards. Try to pull your collarbone up.\r\nBreathe normally, let your thoughts flow.")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -175,7 +175,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("\\pau=200\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\nfive")]]>
+		self.onStopped("\\pau=200\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\r\nfive")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -593,7 +593,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("\\pau=20\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\nfive")]]>
+		self.onStopped("\\pau=20\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\r\nfive")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -672,7 +672,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Warrior two is a powerful and challenging yoga pose that has many health benefits. This pose helps with focus and stress relief. It can also help release negative emotions and help you find your peace and calm.\n\nStep your left leg out to the side with a wide step \\pau=300\\ and turn your right foot out ninety degrees. \\pau=300\\ The left leg should be straight and the right leg bent. Your body should be facing the direction of the left foot. Stretch your arms out to your sides so that they form a line with your shoulders.\n\nHold this position for five breaths. Focus your attention on your breathing and posture.\nI\'m counting for you.")]]>
+		self.onStopped("Warrior two is a powerful and challenging yoga pose that has many health benefits. This pose helps with focus and stress relief. It can also help release negative emotions and help you find your peace and calm.\r\n\r\nStep your left leg out to the side with a wide step \\pau=300\\ and turn your right foot out ninety degrees. \\pau=300\\ The left leg should be straight and the right leg bent. Your body should be facing the direction of the left foot. Stretch your arms out to your sides so that they form a line with your shoulders.\r\n\r\nHold this position for five breaths. Focus your attention on your breathing and posture.\r\nI\'m counting for you.")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -1244,7 +1244,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("I am NAO, a yoga teacher and I am glad that you are all here.\n\\pau=300\\\nToday\'s yoga session is to do basic yoga exercises with you to improve your posture, relaxation and concentration and low your stress.\n\\pau=300\\\nLet\'s start with a simple breathing exercise. Stand comfortably and close your eyes.\n\\pau=1000\\\nBreathe in and out deeply and feel your chest rise and fall.\n\\pau=1000\\\nFocus on your breathing and try to let go of all other thoughts. \\pau=1000\\ Now take three more relaxed breaths.\n\\pau=5000\\\nNow that you have your breathing under control, let\'s move on to the yoga exercises. Please make sure you have enough space to move your arms and legs. I will always explain the exercise first, then you hold it for five breaths.")]]>
+		self.onStopped("I am NAO, a yoga teacher and I am glad that you are all here.\r\n\\pau=300\\\r\nToday\'s yoga session is to do basic yoga exercises with you to improve your posture, relaxation and concentration and low your stress.\r\n\\pau=300\\\r\nLet\'s start with a simple breathing exercise. Stand comfortably and close your eyes.\r\n\\pau=1000\\\r\nBreathe in and out deeply and feel your chest rise and fall.\r\n\\pau=1000\\\r\nFocus on your breathing and try to let go of all other thoughts. \\pau=1000\\ Now take three more relaxed breaths.\r\n\\pau=5000\\\r\nNow that you have your breathing under control, let\'s move on to the yoga exercises. Please make sure you have enough space to move your arms and legs. I will always explain the exercise first, then you hold it for five breaths.")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -1578,11 +1578,12 @@ Now that you have your breathing under control, let's move on to the yoga exerci
               <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
               <Input name="Tadasana (1)_onStart" type="1" type_size="1" nature="2" inner="0" tooltip="This input has been automatically generated&#x0A;by converting several boxes into a single box." id="2" />
               <Output name="Say_onStopped" type="1" type_size="1" nature="2" inner="0" tooltip="This output has been automatically generated&#x0A;by converting several boxes into a single box." id="3" />
+              <Parameter name="File Name" inherits_from_parent="0" content_type="3" value="tadasana" default_value="tadasana" custom_choice="0" tooltip="" id="4" />
               <Timeline enable="0">
                 <BehaviorLayer name="behavior_layer1">
                   <BehaviorKeyframe name="keyframe1" index="1">
-                    <Diagram>
-                      <Box name="Tadasana (1)" id="8" localization="8" tooltip="NAO stands in Tadasana position (mountain stand).&#x0A;Straight back and legs, arms stretched out and palms facing forward." x="159" y="48">
+                    <Diagram scale="100">
+                      <Box name="Tadasana (1)" id="8" localization="8" tooltip="NAO stands in Tadasana position (mountain stand).&#x0A;Straight back and legs, arms stretched out and palms facing forward." x="71" y="57">
                         <bitmap>media/images/box/movement/move.png</bitmap>
                         <script language="4">
                           <content>
@@ -1663,7 +1664,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("The first exercise is called Tadasana, or mountain pose.\n\nTadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.\n\nStand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Slowly move your focus from your leg muscles; calves, thighs up to your lower back and stomach. Your arms hang relaxed at your sides. You can also keep your hands open in front of you. Roll your shoulders once from front to back so that your back is really straight. Your chin is tilted slightly towards your chest so that your back and neck are in line.\n\nHold this position for five breaths. Just breathe normally, the breaths don\'t have to be particularly deep or long. Try to let go of all other thoughts and focus your attention on your breathing and posture.\n\nI\'ll count for you.")]]>
+		self.onStopped("The first exercise is called Tadasana, or mountain pose.\r\n\r\nTadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.\r\n\r\nStand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Slowly move your focus from your leg muscles; calves, thighs up to your lower back and stomach. Your arms hang relaxed at your sides. You can also keep your hands open in front of you. Roll your shoulders once from front to back so that your back is really straight. Your chin is tilted slightly towards your chest so that your back and neck are in line.\r\n\r\nHold this position for five breaths. Just breathe normally, the breaths don\'t have to be particularly deep or long. Try to let go of all other thoughts and focus your attention on your breathing and posture.\r\n\r\nI\'ll count for you.")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -1749,7 +1750,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\nfive")]]>
+		self.onStopped("one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\r\nfive")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -1766,6 +1767,7 @@ five]]>
                                 <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="3" />
                                 <Link inputowner="4" indexofinput="2" outputowner="1" indexofoutput="4" />
                                 <Link inputowner="3" indexofinput="2" outputowner="4" indexofoutput="3" />
+                                <Link inputowner="0" indexofinput="4" outputowner="3" indexofoutput="4" />
                               </Diagram>
                             </BehaviorKeyframe>
                           </BehaviorLayer>
@@ -2007,7 +2009,7 @@ five]]>
                           </ActuatorList>
                         </Timeline>
                       </Box>
-                      <Box name="Say" id="9" localization="8" tooltip="Say some text. The text can be localized." x="706" y="100">
+                      <Box name="Say" id="9" localization="8" tooltip="Say some text. The text can be localized." x="730" y="48">
                         <bitmap>media/images/box/interaction/say.png</bitmap>
                         <script language="4">
                           <content>
@@ -2064,7 +2066,47 @@ class MyClass(GeneratedClass):
                         <Parameter name="Text" inherits_from_parent="0" content_type="5" value="Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one." default_value="" tooltip="The text you want to say. Don&apos;t forget to translate it!" id="7" />
                         <Resource name="Speech" type="Lock" timeout="0" />
                       </Box>
-                      <Box name="Feedback" id="10" localization="8" tooltip="" x="313" y="191">
+                      <Box name="Wait" id="6" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="610" y="55">
+                        <bitmap>media/images/box/wait.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.waiting = None
+
+    def onUnload(self):
+        self.cancelWaiting()
+
+    def triggerOutput(self):
+        self.timerOutput()
+
+    def cancelWaiting(self):
+        if self.waiting:
+            self.waiting.cancel()
+        self.waiting = None
+
+    def onInput_onStart(self):
+        self.cancelWaiting()
+        import qi
+        self.waiting = qi.async(self.triggerOutput, delay=int(self.getParameter("Timeout (s)") * 1000 * 1000))
+
+    def onInput_onStop(self):
+        if self.getParameter("Trigger timerOutput if cancelled") and self.waiting and self.waiting.isRunning():
+            self.timerOutput()
+        self.onUnload()]]>
+                          </content>
+                        </script>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Start the Wait box with the configured timeout value." id="2" />
+                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stop the wait and stimulate the output." id="3" />
+                        <Output name="timerOutput" type="1" type_size="1" nature="1" inner="0" tooltip="Send a bang once time set in parameters is elapsed, or if the box is stopped and the appropriate parameter is set." id="4" />
+                        <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="9" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
+                        <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
+                      </Box>
+                      <Box name="Feedback Old" id="1" localization="8" tooltip="" x="729" y="402">
                         <bitmap>media/images/box/box-diagram.png</bitmap>
                         <script language="4">
                           <content>
@@ -2072,167 +2114,14 @@ class MyClass(GeneratedClass):
                           </content>
                         </script>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                        <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
                         <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
                         <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
                         <Timeline enable="0">
                           <BehaviorLayer name="behavior_layer1">
                             <BehaviorKeyframe name="keyframe1" index="1">
                               <Diagram>
-                                <Box name="Face Detection" id="3" localization="8" tooltip="Detect people&apos;s face and return the number of detected faces.&#x0A;&#x0A;Note: Detect even faces that are not registered in the faces database (that&#x0A;you can teach him with the Learn Face box)." x="248" y="31">
-                                  <bitmap>media/images/box/interaction/face.png</bitmap>
-                                  <script language="4">
-                                    <content>
-                                      <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.bIsRunning = False
-
-    def onUnload(self):
-        self.bIsRunning = False
-
-    def onInput_onStart(self):
-        self.bIsRunning = True
-
-    def onInput_onStop(self):
-        if( self.bIsRunning ):
-            self.onUnload()
-            self.onStopped()]]>
-                                    </content>
-                                  </script>
-                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                  <Input name="FaceDetected" type="0" type_size="1" nature="4" stm_value_name="FaceDetected" inner="1" tooltip="Connected to ALMemory. Will be stimulated every time the value subscribed to changes, respecting the refresh period." id="4" />
-                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is stopped." id="5" />
-                                  <Output name="numberOfFaces" type="2" type_size="1" nature="2" inner="0" tooltip="Number of detected faces. This output is stimulated each time the number of&#x0A;detected faces change." id="6" />
-                                  <Output name="onNoFace" type="1" type_size="1" nature="2" inner="0" tooltip="No face is detected." id="7" />
-                                  <Timeline enable="0">
-                                    <BehaviorLayer name="behavior_layer1">
-                                      <BehaviorKeyframe name="keyframe1" index="1">
-                                        <Diagram>
-                                          <Box name="Count Det. Faces" id="3" localization="8" tooltip="Process face detection extractor data (FaceDetected) to count the number&#x0A;of detected faces and notify when there is no face detected.&#x0A;&#x0A;An output (either one or the other) is stimulated each time the number of&#x0A;detected faces change." x="174" y="71">
-                                            <bitmap>media/images/box/interaction/reco_face.png</bitmap>
-                                            <script language="4">
-                                              <content>
-                                                <![CDATA[class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self, False)
-
-    def onLoad(self):
-        self.nFacesDetected = -1
-
-    def onUnload(self):
-        #puts code for box cleanup here
-        pass
-
-    def onInput_onStart(self, p):
-        if(len(p) > 0):
-            if(self.nFacesDetected != len(p[1]) -1): # an additional array has been placed at the end for time
-                self.nFacesDetected = len(p[1]) -1  # filtered info and has to be substracted when counting faces
-                if(self.nFacesDetected != 0):
-                    self.onFaceDetected( self.nFacesDetected )
-                else:
-                    self.onNoFace()
-        else:
-            if(self.nFacesDetected != 0):
-                self.nFacesDetected = 0
-                self.onNoFace()
-
-    def onInput_onStop(self):
-        pass]]>
-                                              </content>
-                                            </script>
-                                            <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                            <Input name="onStart" type="0" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input. It must be the&#x0A;FaceDetected extractor data." id="2" />
-                                            <Output name="onFaceDetected" type="2" type_size="1" nature="1" inner="0" tooltip="Number of detected faces." id="3" />
-                                            <Output name="onNoFace" type="1" type_size="1" nature="1" inner="0" tooltip="No face is detected." id="4" />
-                                          </Box>
-                                          <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="4" />
-                                          <Link inputowner="0" indexofinput="6" outputowner="3" indexofoutput="3" />
-                                          <Link inputowner="0" indexofinput="7" outputowner="3" indexofoutput="4" />
-                                        </Diagram>
-                                      </BehaviorKeyframe>
-                                    </BehaviorLayer>
-                                  </Timeline>
-                                </Box>
-                                <Box name="Send rquest" id="8" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="463" y="270">
-                                  <bitmap>media/images/box/box-python-script.png</bitmap>
-                                  <script language="4">
-                                    <content>
-                                      <![CDATA[import os
-import httplib
-import json
-import base64
-
-class MyClass(GeneratedClass):
-    def __init__(self):
-        GeneratedClass.__init__(self)
-
-    def onLoad(self):
-        #put initialization code here
-        pass
-
-    def onUnload(self):
-        #put clean-up code here
-        pass
-
-    def onInput_onStart(self):
-        self.logger.info("#####################")
-        try:
-            self.logger.info("Reading the server_config.txt")
-            config_file_path = os.path.join(self.behaviorAbsolutePath(), 'server_config.txt')
-
-            with open(config_file_path, "r") as config_file:
-                server_config = config_file.read().strip()
-
-            server_ip, server_port = server_config.split(":")
-            server_port = int(server_port)
-
-            image_path = os.path.join(self.behaviorAbsolutePath(), 'tadasana.jpg') # change this with the actual image screenshot
-            with open(image_path, "rb") as image_file:
-                encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
-            self.logger.info("Reading the "+ image_path)
-
-            connection = httplib.HTTPConnection(server_ip, server_port)
-
-            headers = {'Content-type': 'application/json'}
-
-            payload = json.dumps({'image_data': encoded_image, 'pose_name': "warrior"}) # change the pose name
-
-            connection.request('POST', '/get_yoga_feedback', payload, headers)
-            self.logger.info("Sending the POST request")
-            response = connection.getresponse()
-
-            if response.status == 200:
-                response_data = json.loads(response.read())
-                message = response_data.get('message')
-            else:
-                message = "Failed to send the image. Status: {}".format(response.status)
-
-            connection.close()
-
-        except Exception as e:
-            message = "Connection error: {}".format(str(e))
-            self.logger.error(str(e))
-        self.logger.info(str(message))
-        self.onStopped(str(message))
-
-        return message
-
-    def onInput_onStop(self):
-        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
-        self.onStopped() #activate the output of the box]]>
-                                    </content>
-                                  </script>
-                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
-                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
-                                  <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
-                                </Box>
-                                <Box name="Say feedback" id="10" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="630" y="276">
+                                <Box name="Say feedback" id="10" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="592" y="29">
                                   <bitmap>media/images/box/interaction/say.png</bitmap>
                                   <script language="4">
                                     <content>
@@ -2294,59 +2183,1224 @@ class MyClass(GeneratedClass):
                                   </Parameter>
                                   <Resource name="Speech" type="Lock" timeout="0" />
                                 </Box>
-                                <Link inputowner="10" indexofinput="2" outputowner="8" indexofoutput="4" />
-                                <Link inputowner="8" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                <Box name="Select Camera" id="1" localization="8" tooltip="Change the currently used camera." x="109" y="37">
+                                  <bitmap>media/images/box/interaction/look.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.cameraModule = self.session().service( "ALVideoDevice" )
+
+    def onUnload(self):
+        pass
+
+    def onInput_onUseTopCamera(self):
+        self.cameraModule.setActiveCamera( 0 )
+        self.onReady()
+
+    def onInput_onUseBottomCamera(self):
+        self.cameraModule.setActiveCamera( 1 )
+        self.onReady()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onUseTopCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the top of the head (forehead)." id="2" />
+                                  <Input name="onUseBottomCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the bottom of the head (mouth)." id="3" />
+                                  <Output name="onReady" type="1" type_size="1" nature="2" inner="0" tooltip="The camera change is done." id="4" />
+                                  <Resource name="Camera setting" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Send Request" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="443" y="29">
+                                  <bitmap>media/images/box/box-python-script.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import os
+import httplib
+import json
+import base64
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        self.logger.info("#####################")
+        poseName = self.getParameter("poseName")
+        self.logger.info(poseName)
+        try:
+            self.logger.info("Reading the server_config.txt")
+            config_file_path = os.path.join(self.behaviorAbsolutePath(), 'server_config.txt')
+
+            with open(config_file_path, "r") as config_file:
+                server_config = config_file.read().strip()
+
+            server_ip, server_port = server_config.split(":")
+            server_port = int(server_port)
+
+            image_path = os.path.join("/home/nao/recordings/cameras/", poseName+'.jpg')
+            with open(image_path, "rb") as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+            self.logger.info("Reading the "+ image_path)
+
+            connection = httplib.HTTPConnection(server_ip, server_port)
+
+            headers = {'Content-type': 'application/json'}
+
+            payload = json.dumps({'image_data': encoded_image, 'pose_name': poseName})
+
+            connection.request('POST', '/get_yoga_feedback', payload, headers)
+            self.logger.info("Sending the POST request")
+            response = connection.getresponse()
+
+            if response.status == 200:
+                response_data = json.loads(response.read())
+                message = response_data.get('message')
+            else:
+                message = "Failed to send the image. Status: {}".format(response.status)
+
+            connection.close()
+
+        except Exception as e:
+            message = "Connection error: {}".format(str(e))
+            self.logger.error(str(e))
+        self.logger.info(str(message))
+        self.onStopped(str(message))
+
+        return message
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                  <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                  <Parameter name="poseName" inherits_from_parent="0" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                                </Box>
+                                <Box name="Take Picture" id="2" localization="8" tooltip="Take a picture with one of the cameras camera and store it in his memory in ~/recordings/cameras. The image format is JPG.&#x0A;&#x0A;V1.1.0&#x0A;" x="270" y="35">
+                                  <bitmap>media/images/box/interaction/picture.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.resolutionMap = {
+            '160 x 120': 0,
+            '320 x 240': 1,
+            '640 x 480': 2,
+            '1280 x 960': 3
+        }
+        self.cameraMap = {
+            'Top': 0,
+            'Bottom': 1
+        }
+
+        self.recordFolder = "/home/nao/recordings/cameras/"
+
+    def onLoad(self):
+        self.bIsRunning = False
+        try:
+            self.photoCapture = self.session().service( "ALPhotoCapture" )
+        except Exception as e:
+            self.photoCapture = None
+            self.logger.error(e)
+
+    def onUnload(self):
+        pass
+
+    def onInput_onStart(self):
+        if( self.bIsRunning ):
+            return
+        self.bIsRunning = True
+        resolution = self.resolutionMap[self.getParameter("Resolution")]
+        cameraID = self.cameraMap[self.getParameter("Camera")]
+        fileName = self.getParameter("File Name")
+        if self.photoCapture:
+            self.photoCapture.setResolution(resolution)
+            self.photoCapture.setCameraID(cameraID)
+            self.photoCapture.setPictureFormat("jpg")
+            self.photoCapture.takePicture( self.recordFolder, fileName )
+        self.bIsRunning = False
+        self.onStopped()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                  <Parameter name="Resolution" inherits_from_parent="0" content_type="3" value="1280 x 960" default_value="640 x 480" custom_choice="0" tooltip="Image resolution." id="4">
+                                    <Choice value="160 x 120" />
+                                    <Choice value="320 x 240" />
+                                    <Choice value="640 x 480" />
+                                    <Choice value="1280 x 960" />
+                                  </Parameter>
+                                  <Parameter name="File Name" inherits_from_parent="0" content_type="3" value="image" default_value="image" custom_choice="0" tooltip="Name of the file without its extension." id="5" />
+                                  <Parameter name="Camera" inherits_from_parent="0" content_type="3" value="Top" default_value="Top" custom_choice="0" tooltip="Enables to select the camera (Top or Bottom) that will take the picture." id="6">
+                                    <Choice value="Top" />
+                                    <Choice value="Bottom" />
+                                  </Parameter>
+                                </Box>
                                 <Link inputowner="0" indexofinput="4" outputowner="10" indexofoutput="4" />
+                                <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
+                                <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="3" />
+                                <Link inputowner="4" indexofinput="5" outputowner="0" indexofoutput="2" />
+                                <Link inputowner="2" indexofinput="5" outputowner="0" indexofoutput="2" />
+                                <Link inputowner="10" indexofinput="2" outputowner="4" indexofoutput="4" />
                               </Diagram>
                             </BehaviorKeyframe>
                           </BehaviorLayer>
                         </Timeline>
                       </Box>
-                      <Box name="Wait" id="6" localization="8" tooltip="Wait a moment before sending a signal on the output. &#x0A;Can be stopped anytime. &#x0A;Stimulating the input again before output is activated restarts the waiting period.&#x0A;" x="524" y="188">
-                        <bitmap>media/images/box/wait.png</bitmap>
+                      <Box name="Feedback1" id="7" localization="8" tooltip="" x="156" y="214">
+                        <bitmap>media/images/box/box-diagram.png</bitmap>
                         <script language="4">
                           <content>
-                            <![CDATA[class MyClass(GeneratedClass):
+                            <![CDATA[]]>
+                          </content>
+                        </script>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                        <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                        <Timeline enable="0">
+                          <BehaviorLayer name="behavior_layer1">
+                            <BehaviorKeyframe name="keyframe1" index="1">
+                              <Diagram>
+                                <Box name="Say feedback" id="10" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="580" y="36">
+                                  <bitmap>media/images/box/interaction/say.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
     def __init__(self):
         GeneratedClass.__init__(self, False)
 
     def onLoad(self):
-        self.waiting = None
+        self.tts = self.session().service('ALAnimatedSpeech')
+        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
+        self.bIsRunning = False
+        self.ids = []
 
     def onUnload(self):
-        self.cancelWaiting()
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
 
-    def triggerOutput(self):
-        self.timerOutput()
-
-    def cancelWaiting(self):
-        if self.waiting:
-            self.waiting.cancel()
-        self.waiting = None
-
-    def onInput_onStart(self):
-        self.cancelWaiting()
-        import qi
-        self.waiting = qi.async(self.triggerOutput, delay=int(self.getParameter("Timeout (s)") * 1000 * 1000))
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            movement = self.getParameter("Speaking movement mode")
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
+            self.ids.append(id)
+            self.tts.wait(id)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
 
     def onInput_onStop(self):
-        if self.getParameter("Trigger timerOutput if cancelled") and self.waiting and self.waiting.isRunning():
-            self.timerOutput()
         self.onUnload()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                  <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                  <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                  <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="89" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                  <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
+                                    <Choice value="disabled" />
+                                    <Choice value="random" />
+                                    <Choice value="contextual" />
+                                  </Parameter>
+                                  <Resource name="Speech" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Select Camera" id="1" localization="8" tooltip="Change the currently used camera." x="109" y="37">
+                                  <bitmap>media/images/box/interaction/look.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.cameraModule = self.session().service( "ALVideoDevice" )
+
+    def onUnload(self):
+        pass
+
+    def onInput_onUseTopCamera(self):
+        self.cameraModule.setActiveCamera( 0 )
+        self.onReady()
+
+    def onInput_onUseBottomCamera(self):
+        self.cameraModule.setActiveCamera( 1 )
+        self.onReady()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onUseTopCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the top of the head (forehead)." id="2" />
+                                  <Input name="onUseBottomCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the bottom of the head (mouth)." id="3" />
+                                  <Output name="onReady" type="1" type_size="1" nature="2" inner="0" tooltip="The camera change is done." id="4" />
+                                  <Resource name="Camera setting" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Send Request" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="417" y="36">
+                                  <bitmap>media/images/box/box-python-script.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import os
+import httplib
+import json
+import base64
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        self.logger.info("#####################")
+        poseName = self.getParameter('File Name')
+        try:
+            self.logger.info("Reading the server_config.txt")
+            config_file_path = os.path.join(self.behaviorAbsolutePath(), 'server_config.txt')
+
+            with open(config_file_path, "r") as config_file:
+                server_config = config_file.read().strip()
+
+            server_ip, server_port = server_config.split(":")
+            server_port = int(server_port)
+
+            image_path = os.path.join("/home/nao/recordings/cameras/", poseName+'.jpg')
+            with open(image_path, "rb") as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+            self.logger.info("Reading the "+ image_path)
+
+            connection = httplib.HTTPConnection(server_ip, server_port)
+
+            headers = {'Content-type': 'application/json'}
+
+            payload = json.dumps({'image_data': encoded_image, 'pose_name': poseName})
+
+            connection.request('POST', '/get_yoga_feedback', payload, headers)
+            self.logger.info("Sending the POST request")
+            response = connection.getresponse()
+
+            if response.status == 200:
+                response_data = json.loads(response.read())
+                message = response_data.get('message')
+            else:
+                message = "Failed to send the image. Status: {}".format(response.status)
+
+            connection.close()
+
+        except Exception as e:
+            message = "Connection error: {}".format(str(e))
+            self.logger.error(str(e))
+        self.logger.info(str(message))
+        self.onStopped(str(message))
+
+        return message
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                  <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                                </Box>
+                                <Box name="Take Picture" id="2" localization="8" tooltip="Take a picture with one of the cameras camera and store it in his memory in ~/recordings/cameras. The image format is JPG.&#x0A;&#x0A;V1.1.0&#x0A;" x="260" y="38">
+                                  <bitmap>media/images/box/interaction/picture.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.resolutionMap = {
+            '160 x 120': 0,
+            '320 x 240': 1,
+            '640 x 480': 2,
+            '1280 x 960': 3
+        }
+        self.cameraMap = {
+            'Top': 0,
+            'Bottom': 1
+        }
+
+        self.recordFolder = "/home/nao/recordings/cameras/"
+
+    def onLoad(self):
+        self.bIsRunning = False
+        try:
+            self.photoCapture = self.session().service( "ALPhotoCapture" )
+        except Exception as e:
+            self.photoCapture = None
+            self.logger.error(e)
+
+    def onUnload(self):
+        pass
+
+    def onInput_onStart(self):
+        if( self.bIsRunning ):
+            return
+        self.bIsRunning = True
+        resolution = self.resolutionMap[self.getParameter("Resolution")]
+        cameraID = self.cameraMap[self.getParameter("Camera")]
+        fileName = self.getParameter("File Name")
+        if self.photoCapture:
+            self.photoCapture.setResolution(resolution)
+            self.photoCapture.setCameraID(cameraID)
+            self.photoCapture.setPictureFormat("jpg")
+            self.photoCapture.takePicture( self.recordFolder, fileName )
+        self.bIsRunning = False
+        self.onStopped()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                  <Parameter name="Resolution" inherits_from_parent="0" content_type="3" value="1280 x 960" default_value="640 x 480" custom_choice="0" tooltip="Image resolution." id="4">
+                                    <Choice value="160 x 120" />
+                                    <Choice value="320 x 240" />
+                                    <Choice value="640 x 480" />
+                                    <Choice value="1280 x 960" />
+                                  </Parameter>
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="Name of the file without its extension." id="5" />
+                                  <Parameter name="Camera" inherits_from_parent="0" content_type="3" value="Top" default_value="Top" custom_choice="0" tooltip="Enables to select the camera (Top or Bottom) that will take the picture." id="6">
+                                    <Choice value="Top" />
+                                    <Choice value="Bottom" />
+                                  </Parameter>
+                                </Box>
+                                <Link inputowner="0" indexofinput="4" outputowner="10" indexofoutput="4" />
+                                <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
+                                <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="3" />
+                                <Link inputowner="10" indexofinput="2" outputowner="4" indexofoutput="4" />
+                              </Diagram>
+                            </BehaviorKeyframe>
+                          </BehaviorLayer>
+                        </Timeline>
+                      </Box>
+                      <Box name="Feedback2" id="2" localization="8" tooltip="" x="272" y="217">
+                        <bitmap>media/images/box/box-diagram.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[]]>
                           </content>
                         </script>
                         <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
-                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Start the Wait box with the configured timeout value." id="2" />
-                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stop the wait and stimulate the output." id="3" />
-                        <Output name="timerOutput" type="1" type_size="1" nature="1" inner="0" tooltip="Send a bang once time set in parameters is elapsed, or if the box is stopped and the appropriate parameter is set." id="4" />
-                        <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="9" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
-                        <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
+                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                        <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                        <Timeline enable="0">
+                          <BehaviorLayer name="behavior_layer1">
+                            <BehaviorKeyframe name="keyframe1" index="1">
+                              <Diagram>
+                                <Box name="Say feedback" id="10" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="580" y="36">
+                                  <bitmap>media/images/box/interaction/say.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.tts = self.session().service('ALAnimatedSpeech')
+        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            movement = self.getParameter("Speaking movement mode")
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
+            self.ids.append(id)
+            self.tts.wait(id)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                  <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                  <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                  <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="89" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                  <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
+                                    <Choice value="disabled" />
+                                    <Choice value="random" />
+                                    <Choice value="contextual" />
+                                  </Parameter>
+                                  <Resource name="Speech" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Select Camera" id="1" localization="8" tooltip="Change the currently used camera." x="109" y="37">
+                                  <bitmap>media/images/box/interaction/look.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.cameraModule = self.session().service( "ALVideoDevice" )
+
+    def onUnload(self):
+        pass
+
+    def onInput_onUseTopCamera(self):
+        self.cameraModule.setActiveCamera( 0 )
+        self.onReady()
+
+    def onInput_onUseBottomCamera(self):
+        self.cameraModule.setActiveCamera( 1 )
+        self.onReady()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onUseTopCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the top of the head (forehead)." id="2" />
+                                  <Input name="onUseBottomCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the bottom of the head (mouth)." id="3" />
+                                  <Output name="onReady" type="1" type_size="1" nature="2" inner="0" tooltip="The camera change is done." id="4" />
+                                  <Resource name="Camera setting" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Send Request" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="417" y="36">
+                                  <bitmap>media/images/box/box-python-script.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import os
+import httplib
+import json
+import base64
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        self.logger.info("#####################")
+        poseName = self.getParameter('File Name')
+        try:
+            self.logger.info("Reading the server_config.txt")
+            config_file_path = os.path.join(self.behaviorAbsolutePath(), 'server_config.txt')
+
+            with open(config_file_path, "r") as config_file:
+                server_config = config_file.read().strip()
+
+            server_ip, server_port = server_config.split(":")
+            server_port = int(server_port)
+
+            image_path = os.path.join("/home/nao/recordings/cameras/", poseName+'.jpg')
+            with open(image_path, "rb") as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+            self.logger.info("Reading the "+ image_path)
+
+            connection = httplib.HTTPConnection(server_ip, server_port)
+
+            headers = {'Content-type': 'application/json'}
+
+            payload = json.dumps({'image_data': encoded_image, 'pose_name': poseName})
+
+            connection.request('POST', '/get_yoga_feedback', payload, headers)
+            self.logger.info("Sending the POST request")
+            response = connection.getresponse()
+
+            if response.status == 200:
+                response_data = json.loads(response.read())
+                message = response_data.get('message')
+            else:
+                message = "Failed to send the image. Status: {}".format(response.status)
+
+            connection.close()
+
+        except Exception as e:
+            message = "Connection error: {}".format(str(e))
+            self.logger.error(str(e))
+        self.logger.info(str(message))
+        self.onStopped(str(message))
+
+        return message
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                  <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                                </Box>
+                                <Box name="Take Picture" id="2" localization="8" tooltip="Take a picture with one of the cameras camera and store it in his memory in ~/recordings/cameras. The image format is JPG.&#x0A;&#x0A;V1.1.0&#x0A;" x="260" y="38">
+                                  <bitmap>media/images/box/interaction/picture.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.resolutionMap = {
+            '160 x 120': 0,
+            '320 x 240': 1,
+            '640 x 480': 2,
+            '1280 x 960': 3
+        }
+        self.cameraMap = {
+            'Top': 0,
+            'Bottom': 1
+        }
+
+        self.recordFolder = "/home/nao/recordings/cameras/"
+
+    def onLoad(self):
+        self.bIsRunning = False
+        try:
+            self.photoCapture = self.session().service( "ALPhotoCapture" )
+        except Exception as e:
+            self.photoCapture = None
+            self.logger.error(e)
+
+    def onUnload(self):
+        pass
+
+    def onInput_onStart(self):
+        if( self.bIsRunning ):
+            return
+        self.bIsRunning = True
+        resolution = self.resolutionMap[self.getParameter("Resolution")]
+        cameraID = self.cameraMap[self.getParameter("Camera")]
+        fileName = self.getParameter("File Name")
+        if self.photoCapture:
+            self.photoCapture.setResolution(resolution)
+            self.photoCapture.setCameraID(cameraID)
+            self.photoCapture.setPictureFormat("jpg")
+            self.photoCapture.takePicture( self.recordFolder, fileName )
+        self.bIsRunning = False
+        self.onStopped()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                  <Parameter name="Resolution" inherits_from_parent="0" content_type="3" value="1280 x 960" default_value="640 x 480" custom_choice="0" tooltip="Image resolution." id="4">
+                                    <Choice value="160 x 120" />
+                                    <Choice value="320 x 240" />
+                                    <Choice value="640 x 480" />
+                                    <Choice value="1280 x 960" />
+                                  </Parameter>
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="Name of the file without its extension." id="5" />
+                                  <Parameter name="Camera" inherits_from_parent="0" content_type="3" value="Top" default_value="Top" custom_choice="0" tooltip="Enables to select the camera (Top or Bottom) that will take the picture." id="6">
+                                    <Choice value="Top" />
+                                    <Choice value="Bottom" />
+                                  </Parameter>
+                                </Box>
+                                <Link inputowner="0" indexofinput="4" outputowner="10" indexofoutput="4" />
+                                <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
+                                <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="3" />
+                                <Link inputowner="10" indexofinput="2" outputowner="4" indexofoutput="4" />
+                              </Diagram>
+                            </BehaviorKeyframe>
+                          </BehaviorLayer>
+                        </Timeline>
                       </Box>
-                      <Link inputowner="8" indexofinput="2" outputowner="0" indexofoutput="2" />
+                      <Box name="Feedback3" id="3" localization="8" tooltip="" x="381" y="216">
+                        <bitmap>media/images/box/box-diagram.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[]]>
+                          </content>
+                        </script>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                        <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                        <Timeline enable="0">
+                          <BehaviorLayer name="behavior_layer1">
+                            <BehaviorKeyframe name="keyframe1" index="1">
+                              <Diagram>
+                                <Box name="Say feedback" id="10" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="580" y="36">
+                                  <bitmap>media/images/box/interaction/say.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.tts = self.session().service('ALAnimatedSpeech')
+        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            movement = self.getParameter("Speaking movement mode")
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
+            self.ids.append(id)
+            self.tts.wait(id)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                  <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                  <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                  <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="89" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                  <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
+                                    <Choice value="disabled" />
+                                    <Choice value="random" />
+                                    <Choice value="contextual" />
+                                  </Parameter>
+                                  <Resource name="Speech" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Select Camera" id="1" localization="8" tooltip="Change the currently used camera." x="109" y="37">
+                                  <bitmap>media/images/box/interaction/look.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.cameraModule = self.session().service( "ALVideoDevice" )
+
+    def onUnload(self):
+        pass
+
+    def onInput_onUseTopCamera(self):
+        self.cameraModule.setActiveCamera( 0 )
+        self.onReady()
+
+    def onInput_onUseBottomCamera(self):
+        self.cameraModule.setActiveCamera( 1 )
+        self.onReady()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onUseTopCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the top of the head (forehead)." id="2" />
+                                  <Input name="onUseBottomCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the bottom of the head (mouth)." id="3" />
+                                  <Output name="onReady" type="1" type_size="1" nature="2" inner="0" tooltip="The camera change is done." id="4" />
+                                  <Resource name="Camera setting" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Send Request" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="417" y="36">
+                                  <bitmap>media/images/box/box-python-script.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import os
+import httplib
+import json
+import base64
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        self.logger.info("#####################")
+        poseName = self.getParameter('File Name')
+        try:
+            self.logger.info("Reading the server_config.txt")
+            config_file_path = os.path.join(self.behaviorAbsolutePath(), 'server_config.txt')
+
+            with open(config_file_path, "r") as config_file:
+                server_config = config_file.read().strip()
+
+            server_ip, server_port = server_config.split(":")
+            server_port = int(server_port)
+
+            image_path = os.path.join("/home/nao/recordings/cameras/", poseName+'.jpg')
+            with open(image_path, "rb") as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+            self.logger.info("Reading the "+ image_path)
+
+            connection = httplib.HTTPConnection(server_ip, server_port)
+
+            headers = {'Content-type': 'application/json'}
+
+            payload = json.dumps({'image_data': encoded_image, 'pose_name': poseName})
+
+            connection.request('POST', '/get_yoga_feedback', payload, headers)
+            self.logger.info("Sending the POST request")
+            response = connection.getresponse()
+
+            if response.status == 200:
+                response_data = json.loads(response.read())
+                message = response_data.get('message')
+            else:
+                message = "Failed to send the image. Status: {}".format(response.status)
+
+            connection.close()
+
+        except Exception as e:
+            message = "Connection error: {}".format(str(e))
+            self.logger.error(str(e))
+        self.logger.info(str(message))
+        self.onStopped(str(message))
+
+        return message
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                  <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                                </Box>
+                                <Box name="Take Picture" id="2" localization="8" tooltip="Take a picture with one of the cameras camera and store it in his memory in ~/recordings/cameras. The image format is JPG.&#x0A;&#x0A;V1.1.0&#x0A;" x="260" y="38">
+                                  <bitmap>media/images/box/interaction/picture.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.resolutionMap = {
+            '160 x 120': 0,
+            '320 x 240': 1,
+            '640 x 480': 2,
+            '1280 x 960': 3
+        }
+        self.cameraMap = {
+            'Top': 0,
+            'Bottom': 1
+        }
+
+        self.recordFolder = "/home/nao/recordings/cameras/"
+
+    def onLoad(self):
+        self.bIsRunning = False
+        try:
+            self.photoCapture = self.session().service( "ALPhotoCapture" )
+        except Exception as e:
+            self.photoCapture = None
+            self.logger.error(e)
+
+    def onUnload(self):
+        pass
+
+    def onInput_onStart(self):
+        if( self.bIsRunning ):
+            return
+        self.bIsRunning = True
+        resolution = self.resolutionMap[self.getParameter("Resolution")]
+        cameraID = self.cameraMap[self.getParameter("Camera")]
+        fileName = self.getParameter("File Name")
+        if self.photoCapture:
+            self.photoCapture.setResolution(resolution)
+            self.photoCapture.setCameraID(cameraID)
+            self.photoCapture.setPictureFormat("jpg")
+            self.photoCapture.takePicture( self.recordFolder, fileName )
+        self.bIsRunning = False
+        self.onStopped()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                  <Parameter name="Resolution" inherits_from_parent="0" content_type="3" value="1280 x 960" default_value="640 x 480" custom_choice="0" tooltip="Image resolution." id="4">
+                                    <Choice value="160 x 120" />
+                                    <Choice value="320 x 240" />
+                                    <Choice value="640 x 480" />
+                                    <Choice value="1280 x 960" />
+                                  </Parameter>
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="Name of the file without its extension." id="5" />
+                                  <Parameter name="Camera" inherits_from_parent="0" content_type="3" value="Top" default_value="Top" custom_choice="0" tooltip="Enables to select the camera (Top or Bottom) that will take the picture." id="6">
+                                    <Choice value="Top" />
+                                    <Choice value="Bottom" />
+                                  </Parameter>
+                                </Box>
+                                <Link inputowner="0" indexofinput="4" outputowner="10" indexofoutput="4" />
+                                <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
+                                <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="3" />
+                                <Link inputowner="10" indexofinput="2" outputowner="4" indexofoutput="4" />
+                              </Diagram>
+                            </BehaviorKeyframe>
+                          </BehaviorLayer>
+                        </Timeline>
+                      </Box>
+                      <Box name="Feedback4" id="4" localization="8" tooltip="" x="496" y="213">
+                        <bitmap>media/images/box/box-diagram.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[]]>
+                          </content>
+                        </script>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                        <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                        <Timeline enable="0">
+                          <BehaviorLayer name="behavior_layer1">
+                            <BehaviorKeyframe name="keyframe1" index="1">
+                              <Diagram>
+                                <Box name="Say feedback" id="10" localization="8" tooltip="Say the text received on its input and move during its speech.&#x0A;" x="580" y="36">
+                                  <bitmap>media/images/box/interaction/say.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.tts = self.session().service('ALAnimatedSpeech')
+        self.ttsStop = self.session().service('ALAnimatedSpeech') #Create another service as wait is blocking if audioout is remote
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self, p):
+        self.bIsRunning = True
+        try:
+            movement = self.getParameter("Speaking movement mode")
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += str(p)
+            sentence +=  "\RST\ "
+            id = self.tts.pCall("say",str(sentence), {"speakingMovementMode":movement})
+            self.ids.append(id)
+            self.tts.wait(id)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                                  <Input name="onStart" type="3" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                                  <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="100" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                                  <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="89" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                                  <Parameter name="Speaking movement mode" inherits_from_parent="0" content_type="3" value="contextual" default_value="contextual" custom_choice="0" tooltip="Change the body language mode during the speech.&#x0A;disabled: The robot will only play the animations given by the user through the animation parameter.&#x0A;random: During time the robot has no animation to play, he will launch random neutral animations.&#x0A;contextual: During time the robot has no animation to play, he will try to launch a new one accordingly to the saying text. Every time the robot can&apos;t find a contextual animation he will launch a random neutral animation." id="7">
+                                    <Choice value="disabled" />
+                                    <Choice value="random" />
+                                    <Choice value="contextual" />
+                                  </Parameter>
+                                  <Resource name="Speech" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Select Camera" id="1" localization="8" tooltip="Change the currently used camera." x="109" y="37">
+                                  <bitmap>media/images/box/interaction/look.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.cameraModule = self.session().service( "ALVideoDevice" )
+
+    def onUnload(self):
+        pass
+
+    def onInput_onUseTopCamera(self):
+        self.cameraModule.setActiveCamera( 0 )
+        self.onReady()
+
+    def onInput_onUseBottomCamera(self):
+        self.cameraModule.setActiveCamera( 1 )
+        self.onReady()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onUseTopCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the top of the head (forehead)." id="2" />
+                                  <Input name="onUseBottomCamera" type="1" type_size="1" nature="1" inner="0" tooltip="Use the camera at the bottom of the head (mouth)." id="3" />
+                                  <Output name="onReady" type="1" type_size="1" nature="2" inner="0" tooltip="The camera change is done." id="4" />
+                                  <Resource name="Camera setting" type="Lock" timeout="0" />
+                                </Box>
+                                <Box name="Send Request" id="4" localization="8" tooltip="This box contains a basic python script and can be used to create any python script box you would like.&#x0A;&#x0A;To edit its script, double-click on it." x="417" y="36">
+                                  <bitmap>media/images/box/box-python-script.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import os
+import httplib
+import json
+import base64
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        pass
+
+    def onUnload(self):
+        #put clean-up code here
+        pass
+
+    def onInput_onStart(self):
+        self.logger.info("#####################")
+        poseName = self.getParameter('File Name')
+        try:
+            self.logger.info("Reading the server_config.txt")
+            config_file_path = os.path.join(self.behaviorAbsolutePath(), 'server_config.txt')
+
+            with open(config_file_path, "r") as config_file:
+                server_config = config_file.read().strip()
+
+            server_ip, server_port = server_config.split(":")
+            server_port = int(server_port)
+
+            image_path = os.path.join("/home/nao/recordings/cameras/", poseName+'.jpg')
+            with open(image_path, "rb") as image_file:
+                encoded_image = base64.b64encode(image_file.read()).decode('utf-8')
+            self.logger.info("Reading the "+ image_path)
+
+            connection = httplib.HTTPConnection(server_ip, server_port)
+
+            headers = {'Content-type': 'application/json'}
+
+            payload = json.dumps({'image_data': encoded_image, 'pose_name': poseName})
+
+            connection.request('POST', '/get_yoga_feedback', payload, headers)
+            self.logger.info("Sending the POST request")
+            response = connection.getresponse()
+
+            if response.status == 200:
+                response_data = json.loads(response.read())
+                message = response_data.get('message')
+            else:
+                message = "Failed to send the image. Status: {}".format(response.status)
+
+            connection.close()
+
+        except Exception as e:
+            message = "Connection error: {}".format(str(e))
+            self.logger.error(str(e))
+        self.logger.info(str(message))
+        self.onStopped(str(message))
+
+        return message
+
+    def onInput_onStop(self):
+        self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
+        self.onStopped() #activate the output of the box]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
+                                  <Output name="onStopped" type="3" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="" id="5" />
+                                </Box>
+                                <Box name="Take Picture" id="2" localization="8" tooltip="Take a picture with one of the cameras camera and store it in his memory in ~/recordings/cameras. The image format is JPG.&#x0A;&#x0A;V1.1.0&#x0A;" x="260" y="38">
+                                  <bitmap>media/images/box/interaction/picture.png</bitmap>
+                                  <script language="4">
+                                    <content>
+                                      <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+        self.resolutionMap = {
+            '160 x 120': 0,
+            '320 x 240': 1,
+            '640 x 480': 2,
+            '1280 x 960': 3
+        }
+        self.cameraMap = {
+            'Top': 0,
+            'Bottom': 1
+        }
+
+        self.recordFolder = "/home/nao/recordings/cameras/"
+
+    def onLoad(self):
+        self.bIsRunning = False
+        try:
+            self.photoCapture = self.session().service( "ALPhotoCapture" )
+        except Exception as e:
+            self.photoCapture = None
+            self.logger.error(e)
+
+    def onUnload(self):
+        pass
+
+    def onInput_onStart(self):
+        if( self.bIsRunning ):
+            return
+        self.bIsRunning = True
+        resolution = self.resolutionMap[self.getParameter("Resolution")]
+        cameraID = self.cameraMap[self.getParameter("Camera")]
+        fileName = self.getParameter("File Name")
+        if self.photoCapture:
+            self.photoCapture.setResolution(resolution)
+            self.photoCapture.setCameraID(cameraID)
+            self.photoCapture.setPictureFormat("jpg")
+            self.photoCapture.takePicture( self.recordFolder, fileName )
+        self.bIsRunning = False
+        self.onStopped()]]>
+                                    </content>
+                                  </script>
+                                  <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+                                  <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this input." id="2" />
+                                  <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="3" />
+                                  <Parameter name="Resolution" inherits_from_parent="0" content_type="3" value="1280 x 960" default_value="640 x 480" custom_choice="0" tooltip="Image resolution." id="4">
+                                    <Choice value="160 x 120" />
+                                    <Choice value="320 x 240" />
+                                    <Choice value="640 x 480" />
+                                    <Choice value="1280 x 960" />
+                                  </Parameter>
+                                  <Parameter name="File Name" inherits_from_parent="1" content_type="3" value="" default_value="" custom_choice="0" tooltip="Name of the file without its extension." id="5" />
+                                  <Parameter name="Camera" inherits_from_parent="0" content_type="3" value="Top" default_value="Top" custom_choice="0" tooltip="Enables to select the camera (Top or Bottom) that will take the picture." id="6">
+                                    <Choice value="Top" />
+                                    <Choice value="Bottom" />
+                                  </Parameter>
+                                </Box>
+                                <Link inputowner="0" indexofinput="4" outputowner="10" indexofoutput="4" />
+                                <Link inputowner="1" indexofinput="2" outputowner="0" indexofoutput="2" />
+                                <Link inputowner="2" indexofinput="2" outputowner="1" indexofoutput="4" />
+                                <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="3" />
+                                <Link inputowner="10" indexofinput="2" outputowner="4" indexofoutput="4" />
+                              </Diagram>
+                            </BehaviorKeyframe>
+                          </BehaviorLayer>
+                        </Timeline>
+                      </Box>
                       <Link inputowner="0" indexofinput="3" outputowner="9" indexofoutput="4" />
-                      <Link inputowner="10" indexofinput="2" outputowner="8" indexofoutput="4" />
-                      <Link inputowner="6" indexofinput="2" outputowner="10" indexofoutput="4" />
                       <Link inputowner="9" indexofinput="2" outputowner="6" indexofoutput="4" />
+                      <Link inputowner="8" indexofinput="2" outputowner="0" indexofoutput="2" />
+                      <Link inputowner="7" indexofinput="2" outputowner="8" indexofoutput="4" />
+                      <Link inputowner="2" indexofinput="2" outputowner="7" indexofoutput="4" />
+                      <Link inputowner="3" indexofinput="2" outputowner="2" indexofoutput="4" />
+                      <Link inputowner="4" indexofinput="2" outputowner="3" indexofoutput="4" />
+                      <Link inputowner="6" indexofinput="2" outputowner="4" indexofoutput="4" />
                     </Diagram>
                   </BehaviorKeyframe>
                 </BehaviorLayer>
@@ -2447,7 +3501,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture.\n\nIt creates awareness of muscles and balance.\n\nStand with your feet together and your hands at your sides. Make sure your feet are flat on the floor and your shoulders are relaxed and facing downward. Now step your right leg forward \\pau=300\\ and extend your left leg, foot should be facing outwards. \\pau=300\\\nBend your right knee as far as you can without it being too strenuous. Raise your arms up, palm facing inwards. Pull your chest and collarbone up and imagine your hands reaching to the ceiling. Your gaze is directed upwards.\n\nHold this position for five breaths.\n\nI\'ll count for you again.")]]>
+		self.onStopped("Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture.\r\n\r\nIt creates awareness of muscles and balance.\r\n\r\nStand with your feet together and your hands at your sides. Make sure your feet are flat on the floor and your shoulders are relaxed and facing downward. Now step your right leg forward \\pau=300\\ and extend your left leg, foot should be facing outwards. \\pau=300\\\r\nBend your right knee as far as you can without it being too strenuous. Raise your arms up, palm facing inwards. Pull your chest and collarbone up and imagine your hands reaching to the ceiling. Your gaze is directed upwards.\r\n\r\nHold this position for five breaths.\r\n\r\nI\'ll count for you again.")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -2534,7 +3588,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("\\pau=20\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\nfive")]]>
+		self.onStopped("\\pau=20\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\r\nfive")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -3191,7 +4245,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Stand up straight with your knees slightly bent. Your arms hang relaxed at your sides, your palms open in front of you. Tilt your chin slightly to your chest and breathe along the muscles in your body.\n\\pau=1000\\")]]>
+		self.onStopped("Stand up straight with your knees slightly bent. Your arms hang relaxed at your sides, your palms open in front of you. Tilt your chin slightly to your chest and breathe along the muscles in your body.\r\n\\pau=1000\\")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -3270,7 +4324,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("\\pau=20\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\nfive")]]>
+		self.onStopped("\\pau=20\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\r\nfive")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -3669,7 +4723,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("\\pau=200\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\nfive")]]>
+		self.onStopped("\\pau=200\\ one \\pau=3000\\ two \\pau=3000\\ three \\pau=3000\\ four \\pau=3000\\\r\nfive")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -3875,7 +4929,7 @@ five]]>
                 </ActuatorList>
               </Timeline>
             </Box>
-            <Box name="Outro" id="9" localization="8" tooltip="Enter description here" x="1026" y="101">
+            <Box name="Outro" id="9" localization="8" tooltip="Enter description here" x="1015" y="181">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -3955,7 +5009,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Very good! \\pau=300\\\nThank you for joining me today! I hope you now feel inspired and motivated to practice these simple yoga poses in your daily life.\nDon\'t forget to practice regularly for the best results.")]]>
+		self.onStopped("Very good! \\pau=300\\\r\nThank you for joining me today! I hope you now feel inspired and motivated to practice these simple yoga poses in your daily life.\r\nDon\'t forget to practice regularly for the best results.")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -4325,7 +5379,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Play Sound" id="6" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="195" y="318">
+            <Box name="Play Sound" id="6" localization="8" tooltip="Play a sound file. Select the file in parameters. The format of the file can be wav or ogg (on virtual robot) and also mp3 (on a real robot).&#x0A;&#x0A;Note: There can be some delay to play ogg or mp3 (on a robot) files. We advise you to use wav if&#x0A;you want a fast play of the file." x="290" y="290">
               <bitmap>media/images/box/interaction/play_music.png</bitmap>
               <script language="4">
                 <content>
@@ -4446,7 +5500,7 @@ class MyClass(GeneratedClass):
               </Timeline>
               <Resource name="Audio player" type="Lock" timeout="0" />
             </Box>
-            <Box name="Disable SafeGuard/Awareness" id="11" localization="8" tooltip="" x="64" y="312">
+            <Box name="Disable SafeGuard/Awareness" id="11" localization="8" tooltip="" x="142" y="289">
               <bitmap>media/images/box/box-python-script.png</bitmap>
               <script language="4">
                 <content>
@@ -4513,6 +5567,130 @@ class MyClass(GeneratedClass):
               <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
               <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
             </Box>
+            <Box name="Basic Awareness" id="12" localization="8" tooltip="This box is an interface to the module ALBasicAwareness.&#x0A;&#x0A;It is a simple way to make the robot establish and keep eye contact with people.&#x0A;&#x0A;V1.1.0" x="89" y="465">
+              <bitmap>media/images/box/tracker/basicawareness.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self)
+
+    def onLoad(self):
+        #put initialization code here
+        try:
+            self.awareness = self.session().service('ALBasicAwareness')
+        except Exception as e:
+            self.awareness = None
+            self.logger.error(e)
+
+        self.memory = self.session().service('ALMemory')
+
+        self.isRunning = False
+        self.trackedHuman = -1
+
+        import threading
+        self.subscribingLock = threading.Lock()
+
+        self.BIND_PYTHON(self.getName(), "setParameter")
+
+
+    def onUnload(self):
+        if self.isRunning:
+            if self.awareness:
+                self.awareness.stopAwareness()
+                self.setALMemorySubscription(False)
+            self.isRunning = False
+
+
+    def onInput_onStart(self):
+        if self.isRunning:
+            return # already running, nothing to do
+
+        self.isRunning = True
+        self.trackedHuman = -1
+        if self.awareness:
+            self.awareness.setEngagementMode(self.getParameter('Engagement Mode'))
+            self.awareness.setTrackingMode(self.getParameter('Tracking Mode'))
+            self.awareness.setStimulusDetectionEnabled('Sound', self.getParameter('Sound Stimulus'))
+            self.awareness.setStimulusDetectionEnabled('Movement', self.getParameter('Movement Stimulus'))
+            self.awareness.setStimulusDetectionEnabled('People', self.getParameter('People Stimulus'))
+            self.awareness.setStimulusDetectionEnabled('Touch', self.getParameter('Touch Stimulus'))
+            self.setALMemorySubscription(True)
+            self.awareness.startAwareness()
+
+
+
+    def onInput_onStop(self):
+        if not self.isRunning:
+            return # already stopped, nothing to do
+
+        self.onUnload()
+        self.onStopped()
+
+
+    def setParameter(self, parameterName, newValue):
+        GeneratedClass.setParameter(self, parameterName, newValue)
+
+        if self.awareness:
+            if parameterName == 'Sound Stimulus':
+                self.awareness.setStimulusDetectionEnabled('Sound', newValue)
+            elif parameterName == 'Movement Stimulus':
+                self.awareness.setStimulusDetectionEnabled('Movement', newValue)
+            elif parameterName == 'People Stimulus':
+                self.awareness.setStimulusDetectionEnabled('People', newValue)
+            elif parameterName == 'Touch Stimulus':
+                self.awareness.setStimulusDetectionEnabled('Touch', newValue)
+
+
+    # callbacks for ALBasicAwareness events
+    def onStimulusDetected(self, eventName, stimulusName, subscriberIdentifier):
+        self.StimulusDetected(stimulusName)
+
+    def onHumanTracked(self, eventName, humanID, subscriberIdentifier):
+        self.trackedHuman = humanID
+        self.HumanTracked(humanID)
+
+    def onHumanLost(self, eventName, subscriberIdentifier):
+        self.HumanLost(self.trackedHuman)
+        self.trackedHuman = -1
+
+
+    def setALMemorySubscription(self, subscribe):
+        self.subscribingLock.acquire()
+        if subscribe:
+            self.memory.subscribeToEvent('ALBasicAwareness/StimulusDetected', self.getName(), 'onStimulusDetected')
+            self.memory.subscribeToEvent('ALBasicAwareness/HumanTracked', self.getName(), 'onHumanTracked')
+            self.memory.subscribeToEvent('ALBasicAwareness/HumanLost', self.getName(), 'onHumanLost')
+        else:
+            self.memory.unsubscribeToEvent('ALBasicAwareness/StimulusDetected', self.getName())
+            self.memory.unsubscribeToEvent('ALBasicAwareness/HumanTracked', self.getName())
+            self.memory.unsubscribeToEvent('ALBasicAwareness/HumanLost', self.getName())
+
+        self.subscribingLock.release()]]>
+                </content>
+              </script>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Starts the Basic Awareness with the given Engagement and Tracking mode parameters, using the given stimuli." id="2" />
+              <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Stops the Basic Awareness." id="3" />
+              <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
+              <Output name="StimulusDetected" type="3" type_size="1" nature="2" inner="0" tooltip="This output is stimulated when BasicAwareness detects a stimulus amongst the tracked stimulus.&#x0A;&#x0A;The output data is the stimulus&apos; name." id="5" />
+              <Output name="HumanTracked" type="2" type_size="1" nature="2" inner="0" tooltip="This output is triggered when ALBasicAwareness detects a stimulus that is confirmed to be a human.&#x0A;&#x0A;The output data is the ID corresponding to the tracked human. It is shared with PeoplePerception and can be used there. This output is triggered with -1 if ALBasicAwareness tried to detect a human but failed." id="6" />
+              <Output name="HumanLost" type="2" type_size="1" nature="2" inner="0" tooltip="This output is triggered when the human currently tracked is lost.&#x0A;&#x0A; The output data is the ID corresponding to the lost human. It can be reused in PeoplePerception." id="7" />
+              <Parameter name="Engagement Mode" inherits_from_parent="0" content_type="3" value="FullyEngaged" default_value="Unengaged" custom_choice="0" tooltip='The engagement mode specifies how &quot;focused&quot; the robot is on the engaged person.' id="8">
+                <Choice value="Unengaged" />
+                <Choice value="FullyEngaged" />
+                <Choice value="SemiEngaged" />
+              </Parameter>
+              <Parameter name="Tracking Mode" inherits_from_parent="0" content_type="3" value="Head" default_value="Head" custom_choice="0" tooltip="The tracking mode describes how the robot keeps eye contact with an engaged person." id="9">
+                <Choice value="Head" />
+                <Choice value="BodyRotation" />
+                <Choice value="WholeBody" />
+              </Parameter>
+              <Parameter name="Sound Stimulus" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="" id="10" />
+              <Parameter name="Movement Stimulus" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="" id="11" />
+              <Parameter name="People Stimulus" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="" id="12" />
+              <Parameter name="Touch Stimulus" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="" id="13" />
+            </Box>
             <Link inputowner="5" indexofinput="2" outputowner="3" indexofoutput="3" />
             <Link inputowner="2" indexofinput="2" outputowner="5" indexofoutput="3" />
             <Link inputowner="4" indexofinput="2" outputowner="2" indexofoutput="4" />
@@ -4520,11 +5698,12 @@ class MyClass(GeneratedClass):
             <Link inputowner="7" indexofinput="2" outputowner="1" indexofoutput="4" />
             <Link inputowner="9" indexofinput="2" outputowner="7" indexofoutput="4" />
             <Link inputowner="3" indexofinput="2" outputowner="16" indexofoutput="3" />
-            <Link inputowner="6" indexofinput="2" outputowner="16" indexofoutput="3" />
-            <Link inputowner="16" indexofinput="2" outputowner="0" indexofoutput="2" />
             <Link inputowner="11" indexofinput="2" outputowner="0" indexofoutput="2" />
             <Link inputowner="8" indexofinput="2" outputowner="9" indexofoutput="3" />
             <Link inputowner="0" indexofinput="4" outputowner="8" indexofoutput="4" />
+            <Link inputowner="12" indexofinput="2" outputowner="0" indexofoutput="2" />
+            <Link inputowner="6" indexofinput="2" outputowner="16" indexofoutput="3" />
+            <Link inputowner="3" indexofinput="2" outputowner="0" indexofoutput="2" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>
