@@ -6026,8 +6026,6 @@ class MyClass(GeneratedClass):
         #self.onStopped() #activate the output of the box
         life = ALProxy("ALAutonomousLife")
         life.setSafeguardEnabled("RobotFell", False)
-        aware = ALProxy("ALBasicAwareness")
-        aware.stopAwareness()
 
     def onInput_onStop(self):
         self.onUnload() #it is recommended to reuse the clean-up as the box is stopped
