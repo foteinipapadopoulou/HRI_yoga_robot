@@ -5,6 +5,7 @@ import os
 from yoga_feedback import get_feedback 
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
+os.chdir(current_directory)
 
 app = Flask(__name__)
 
@@ -19,7 +20,7 @@ def get_yoga_feedback():
 		
 		image_bytes = base64.b64decode(image_data)
 
-		image_path = os.path.join(current_directory, 'received_image.jpg')
+		image_path = 'received_image.jpg'
 
 		#save the image
 		with open(image_path, 'wb') as image_file:
@@ -40,8 +41,7 @@ def get_yoga_feedback():
 
 def get_server_config():
 	try:
-		config_file_path = os.path.join(current_directory, 'server_config.txt')
-		with open(config_file_path, 'r') as config_file:
+		with open('server_config.txt', 'r') as config_file:
 			config_line = config_file.readline().strip()
 			ip_address, port = config_line.split(':')
 			port = int(port)
