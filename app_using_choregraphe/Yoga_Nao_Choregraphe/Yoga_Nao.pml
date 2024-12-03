@@ -8,7 +8,6 @@
     <Resources>
         <File name="icon" src="icon.png" />
         <File name="server_config" src="behavior_with_feedback/server_config.txt" />
-        <File name="tadasana" src="behavior_with_feedback/tadasana.jpg" />
         <File name="camera1" src="behavior_with_feedback/camera1.ogg" />
     </Resources>
     <Topics />
