@@ -2640,47 +2640,17 @@ class MyClass(GeneratedClass):
                             </BehaviorKeyframe>
                           </BehaviorLayer>
                           <ActuatorList model="nao">
-                            <ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0">
-                              <Key frame="1" value="-8.70368" />
-                              <Key frame="273" value="-9.93417" />
-                              <Key frame="293" value="-9.84628" />
-                              <Key frame="314" value="-9.93417" />
-                              <Key frame="374" value="-9.93417" />
-                              <Key frame="410" value="-9.93417" />
-                              <Key frame="416" value="-9.93417" />
-                              <Key frame="421" value="-9.93417" />
-                              <Key frame="550" value="-39.0263" />
-                              <Key frame="731" value="-39.0263" />
-                              <Key frame="967" value="-39.0263" />
-                              <Key frame="983" value="-12.7467" />
-                              <Key frame="1000" value="-8.70368" />
-                              <Key frame="1016" value="-10.1978" />
-                            </ActuatorCurve>
-                            <ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0">
-                              <Key frame="1" value="-0.353968" />
-                              <Key frame="273" value="0.700723" />
-                              <Key frame="293" value="-0.441859" />
-                              <Key frame="314" value="-0.441859" />
-                              <Key frame="374" value="-0.441859" />
-                              <Key frame="410" value="-0.441859" />
-                              <Key frame="416" value="-0.441859" />
-                              <Key frame="421" value="-0.441859" />
-                              <Key frame="550" value="-0.441859" />
-                              <Key frame="731" value="-0.441859" />
-                              <Key frame="967" value="-0.441859" />
-                              <Key frame="983" value="-0.441859" />
-                              <Key frame="1000" value="-0.353968" />
-                              <Key frame="1016" value="0.173378" />
-                            </ActuatorCurve>
+                            <ActuatorCurve name="value" actuator="HeadPitch" mute="1" unit="0" />
+                            <ActuatorCurve name="value" actuator="HeadYaw" mute="1" unit="0" />
                             <ActuatorCurve name="value" actuator="LAnklePitch" mute="0" unit="0">
                               <Key frame="1" value="5.44688" />
-                              <Key frame="273" value="4.83163" />
-                              <Key frame="293" value="-26.8094" />
-                              <Key frame="314" value="-67.8548" />
-                              <Key frame="374" value="-67.8548" />
-                              <Key frame="410" value="-68.5579" />
-                              <Key frame="416" value="-68.5579" />
-                              <Key frame="421" value="-68.5579" />
+                              <Key frame="147" value="4.83163" />
+                              <Key frame="167" value="-26.8094" />
+                              <Key frame="188" value="-67.8548" />
+                              <Key frame="248" value="-67.8548" />
+                              <Key frame="284" value="-68.5579" />
+                              <Key frame="290" value="-68.5579" />
+                              <Key frame="295" value="-68.5579" />
                               <Key frame="550" value="-68.5579" />
                               <Key frame="731" value="-68.5579" />
                               <Key frame="967" value="-68.5579" />
@@ -2690,13 +2660,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LAnkleRoll" mute="0" unit="0">
                               <Key frame="1" value="-6.67737" />
-                              <Key frame="273" value="-6.4137" />
-                              <Key frame="293" value="-5.97423" />
-                              <Key frame="314" value="-2.54646" />
-                              <Key frame="374" value="-2.54646" />
-                              <Key frame="410" value="-2.54646" />
-                              <Key frame="416" value="-2.54646" />
-                              <Key frame="421" value="-2.54646" />
+                              <Key frame="147" value="-6.4137" />
+                              <Key frame="167" value="-5.97423" />
+                              <Key frame="188" value="-2.54646" />
+                              <Key frame="248" value="-2.54646" />
+                              <Key frame="284" value="-2.54646" />
+                              <Key frame="290" value="-2.54646" />
+                              <Key frame="295" value="-2.54646" />
                               <Key frame="550" value="-2.54646" />
                               <Key frame="731" value="-2.54646" />
                               <Key frame="967" value="-2.54646" />
@@ -2706,13 +2676,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LElbowRoll" mute="0" unit="0">
                               <Key frame="1" value="-23.2889" />
-                              <Key frame="273" value="-22.8494" />
-                              <Key frame="293" value="-10.8962" />
-                              <Key frame="314" value="-13.7966" />
-                              <Key frame="374" value="-13.7966" />
-                              <Key frame="410" value="-1.0523" />
-                              <Key frame="416" value="-1.0523" />
-                              <Key frame="421" value="-1.0523" />
+                              <Key frame="147" value="-22.8494" />
+                              <Key frame="167" value="-10.8962" />
+                              <Key frame="188" value="-13.7966" />
+                              <Key frame="248" value="-13.7966" />
+                              <Key frame="284" value="-1.0523" />
+                              <Key frame="290" value="-1.0523" />
+                              <Key frame="295" value="-1.0523" />
                               <Key frame="550" value="-1.0523" />
                               <Key frame="731" value="-1.0523" />
                               <Key frame="967" value="-1.0523" />
@@ -2722,13 +2692,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LElbowYaw" mute="0" unit="0">
                               <Key frame="1" value="-67.1517" />
-                              <Key frame="273" value="-67.3275" />
-                              <Key frame="293" value="-67.1517" />
-                              <Key frame="314" value="-68.8216" />
-                              <Key frame="374" value="-68.8216" />
-                              <Key frame="410" value="-53.2648" />
-                              <Key frame="416" value="-53.2648" />
-                              <Key frame="421" value="-53.2648" />
+                              <Key frame="147" value="-67.3275" />
+                              <Key frame="167" value="-67.1517" />
+                              <Key frame="188" value="-68.8216" />
+                              <Key frame="248" value="-68.8216" />
+                              <Key frame="284" value="-53.2648" />
+                              <Key frame="290" value="-53.2648" />
+                              <Key frame="295" value="-53.2648" />
                               <Key frame="550" value="-53.2648" />
                               <Key frame="731" value="-53.2648" />
                               <Key frame="967" value="-53.2648" />
@@ -2738,13 +2708,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LHand" mute="0" unit="1">
                               <Key frame="1" value="0.2892" />
-                              <Key frame="273" value="0.3048" />
-                              <Key frame="293" value="0.3004" />
-                              <Key frame="314" value="0.296" />
-                              <Key frame="374" value="0.296" />
-                              <Key frame="410" value="0.7696" />
-                              <Key frame="416" value="0.7696" />
-                              <Key frame="421" value="0.7696" />
+                              <Key frame="147" value="0.3048" />
+                              <Key frame="167" value="0.3004" />
+                              <Key frame="188" value="0.296" />
+                              <Key frame="248" value="0.296" />
+                              <Key frame="284" value="0.7696" />
+                              <Key frame="290" value="0.7696" />
+                              <Key frame="295" value="0.7696" />
                               <Key frame="550" value="0.7696" />
                               <Key frame="731" value="0.7696" />
                               <Key frame="967" value="0.7696" />
@@ -2754,13 +2724,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LHipPitch" mute="0" unit="0">
                               <Key frame="1" value="7.29742" />
-                              <Key frame="273" value="7.56109" />
-                              <Key frame="293" value="-36.9121" />
-                              <Key frame="314" value="3.78175" />
-                              <Key frame="374" value="3.78175" />
-                              <Key frame="410" value="3.78175" />
-                              <Key frame="416" value="3.78175" />
-                              <Key frame="421" value="3.78175" />
+                              <Key frame="147" value="7.56109" />
+                              <Key frame="167" value="-36.9121" />
+                              <Key frame="188" value="3.78175" />
+                              <Key frame="248" value="3.78175" />
+                              <Key frame="284" value="3.78175" />
+                              <Key frame="290" value="3.78175" />
+                              <Key frame="295" value="3.78175" />
                               <Key frame="550" value="3.78175" />
                               <Key frame="731" value="3.78175" />
                               <Key frame="967" value="3.78175" />
@@ -2770,13 +2740,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LHipRoll" mute="0" unit="0">
                               <Key frame="1" value="6.41851" />
-                              <Key frame="273" value="6.85796" />
-                              <Key frame="293" value="4.66066" />
-                              <Key frame="314" value="-1.93121" />
-                              <Key frame="374" value="-1.93121" />
-                              <Key frame="410" value="-1.93121" />
-                              <Key frame="416" value="-1.93121" />
-                              <Key frame="421" value="-1.93121" />
+                              <Key frame="147" value="6.85796" />
+                              <Key frame="167" value="4.66066" />
+                              <Key frame="188" value="-1.93121" />
+                              <Key frame="248" value="-1.93121" />
+                              <Key frame="284" value="-1.93121" />
+                              <Key frame="290" value="-1.93121" />
+                              <Key frame="295" value="-1.93121" />
                               <Key frame="550" value="-1.93121" />
                               <Key frame="731" value="-1.93121" />
                               <Key frame="967" value="-1.93121" />
@@ -2786,13 +2756,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LHipYawPitch" mute="0" unit="0">
                               <Key frame="1" value="-9.66569" />
-                              <Key frame="273" value="-9.92936" />
-                              <Key frame="293" value="-10.7204" />
-                              <Key frame="314" value="-26.453" />
-                              <Key frame="374" value="-26.453" />
-                              <Key frame="410" value="-26.453" />
-                              <Key frame="416" value="-26.453" />
-                              <Key frame="421" value="-26.453" />
+                              <Key frame="147" value="-9.92936" />
+                              <Key frame="167" value="-10.7204" />
+                              <Key frame="188" value="-26.453" />
+                              <Key frame="248" value="-26.453" />
+                              <Key frame="284" value="-26.453" />
+                              <Key frame="290" value="-26.453" />
+                              <Key frame="295" value="-26.453" />
                               <Key frame="550" value="-26.453" />
                               <Key frame="731" value="-26.453" />
                               <Key frame="967" value="-26.453" />
@@ -2802,13 +2772,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LKneePitch" mute="0" unit="0">
                               <Key frame="1" value="-5.45169" />
-                              <Key frame="273" value="-5.45169" />
-                              <Key frame="293" value="68.2016" />
-                              <Key frame="314" value="81.649" />
-                              <Key frame="374" value="81.649" />
-                              <Key frame="410" value="81.649" />
-                              <Key frame="416" value="81.649" />
-                              <Key frame="421" value="81.649" />
+                              <Key frame="147" value="-5.45169" />
+                              <Key frame="167" value="68.2016" />
+                              <Key frame="188" value="81.649" />
+                              <Key frame="248" value="81.649" />
+                              <Key frame="284" value="81.649" />
+                              <Key frame="290" value="81.649" />
+                              <Key frame="295" value="81.649" />
                               <Key frame="550" value="81.649" />
                               <Key frame="731" value="81.649" />
                               <Key frame="967" value="81.649" />
@@ -2818,13 +2788,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LShoulderPitch" mute="0" unit="0">
                               <Key frame="1" value="81.5611" />
-                              <Key frame="273" value="81.4732" />
-                              <Key frame="293" value="71.5415" />
-                              <Key frame="314" value="72.4204" />
-                              <Key frame="374" value="72.4204" />
-                              <Key frame="410" value="-84.73" />
-                              <Key frame="416" value="-84.73" />
-                              <Key frame="421" value="-84.73" />
+                              <Key frame="147" value="81.4732" />
+                              <Key frame="167" value="71.5415" />
+                              <Key frame="188" value="72.4204" />
+                              <Key frame="248" value="72.4204" />
+                              <Key frame="284" value="-84.73" />
+                              <Key frame="290" value="-84.73" />
+                              <Key frame="295" value="-84.73" />
                               <Key frame="550" value="-84.73" />
                               <Key frame="731" value="-84.73" />
                               <Key frame="967" value="-84.73" />
@@ -2834,13 +2804,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LShoulderRoll" mute="0" unit="0">
                               <Key frame="1" value="11.4235" />
-                              <Key frame="273" value="12.3903" />
-                              <Key frame="293" value="22.4979" />
-                              <Key frame="314" value="18.9822" />
-                              <Key frame="374" value="18.9822" />
-                              <Key frame="410" value="21.9705" />
-                              <Key frame="416" value="21.9705" />
-                              <Key frame="421" value="21.9705" />
+                              <Key frame="147" value="12.3903" />
+                              <Key frame="167" value="22.4979" />
+                              <Key frame="188" value="18.9822" />
+                              <Key frame="248" value="18.9822" />
+                              <Key frame="284" value="21.9705" />
+                              <Key frame="290" value="21.9705" />
+                              <Key frame="295" value="21.9705" />
                               <Key frame="550" value="21.9705" />
                               <Key frame="731" value="21.9705" />
                               <Key frame="967" value="21.9705" />
@@ -2850,13 +2820,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="LWristYaw" mute="0" unit="0">
                               <Key frame="1" value="6.94104" />
-                              <Key frame="273" value="4.83163" />
-                              <Key frame="293" value="-50.1886" />
-                              <Key frame="314" value="-11.8678" />
-                              <Key frame="374" value="-11.8678" />
-                              <Key frame="410" value="-40.8721" />
-                              <Key frame="416" value="-40.8721" />
-                              <Key frame="421" value="-40.8721" />
+                              <Key frame="147" value="4.83163" />
+                              <Key frame="167" value="-50.1886" />
+                              <Key frame="188" value="-11.8678" />
+                              <Key frame="248" value="-11.8678" />
+                              <Key frame="284" value="-40.8721" />
+                              <Key frame="290" value="-40.8721" />
+                              <Key frame="295" value="-40.8721" />
                               <Key frame="550" value="-40.8721" />
                               <Key frame="731" value="-40.8721" />
                               <Key frame="967" value="-40.8721" />
@@ -2866,13 +2836,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RAnklePitch" mute="0" unit="0">
                               <Key frame="1" value="5.45169" />
-                              <Key frame="273" value="4.92435" />
-                              <Key frame="293" value="-32.2539" />
-                              <Key frame="314" value="18.5476" />
-                              <Key frame="374" value="18.5476" />
-                              <Key frame="410" value="18.5476" />
-                              <Key frame="416" value="18.5476" />
-                              <Key frame="421" value="18.5476" />
+                              <Key frame="147" value="4.92435" />
+                              <Key frame="167" value="-32.2539" />
+                              <Key frame="188" value="18.5476" />
+                              <Key frame="248" value="18.5476" />
+                              <Key frame="284" value="18.5476" />
+                              <Key frame="290" value="18.5476" />
+                              <Key frame="295" value="18.5476" />
                               <Key frame="550" value="18.5476" />
                               <Key frame="731" value="18.5476" />
                               <Key frame="967" value="18.5476" />
@@ -2882,13 +2852,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RAnkleRoll" mute="0" unit="0">
                               <Key frame="1" value="6.85796" />
-                              <Key frame="273" value="6.3306" />
-                              <Key frame="293" value="6.5064" />
-                              <Key frame="314" value="-2.0191" />
-                              <Key frame="374" value="-2.0191" />
-                              <Key frame="410" value="-2.0191" />
-                              <Key frame="416" value="-2.0191" />
-                              <Key frame="421" value="-2.0191" />
+                              <Key frame="147" value="6.3306" />
+                              <Key frame="167" value="6.5064" />
+                              <Key frame="188" value="-2.0191" />
+                              <Key frame="248" value="-2.0191" />
+                              <Key frame="284" value="-2.0191" />
+                              <Key frame="290" value="-2.0191" />
+                              <Key frame="295" value="-2.0191" />
                               <Key frame="550" value="-2.0191" />
                               <Key frame="731" value="-2.0191" />
                               <Key frame="967" value="-2.0191" />
@@ -2898,13 +2868,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RElbowRoll" mute="0" unit="0">
                               <Key frame="1" value="24.6121" />
-                              <Key frame="273" value="22.8542" />
-                              <Key frame="293" value="21.0085" />
-                              <Key frame="314" value="15.4713" />
-                              <Key frame="374" value="15.4713" />
-                              <Key frame="410" value="0.969218" />
-                              <Key frame="416" value="0.969218" />
-                              <Key frame="421" value="0.969218" />
+                              <Key frame="147" value="22.8542" />
+                              <Key frame="167" value="21.0085" />
+                              <Key frame="188" value="15.4713" />
+                              <Key frame="248" value="15.4713" />
+                              <Key frame="284" value="0.969218" />
+                              <Key frame="290" value="0.969218" />
+                              <Key frame="295" value="0.969218" />
                               <Key frame="550" value="0.969218" />
                               <Key frame="731" value="0.969218" />
                               <Key frame="967" value="0.969218" />
@@ -2914,13 +2884,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RElbowYaw" mute="0" unit="0">
                               <Key frame="1" value="68.0258" />
-                              <Key frame="273" value="69.3442" />
-                              <Key frame="293" value="69.9594" />
-                              <Key frame="314" value="73.3872" />
-                              <Key frame="374" value="73.3872" />
-                              <Key frame="410" value="74.0024" />
-                              <Key frame="416" value="74.0024" />
-                              <Key frame="421" value="74.0024" />
+                              <Key frame="147" value="69.3442" />
+                              <Key frame="167" value="69.9594" />
+                              <Key frame="188" value="73.3872" />
+                              <Key frame="248" value="73.3872" />
+                              <Key frame="284" value="74.0024" />
+                              <Key frame="290" value="74.0024" />
+                              <Key frame="295" value="74.0024" />
                               <Key frame="550" value="74.0024" />
                               <Key frame="731" value="74.0024" />
                               <Key frame="967" value="74.0024" />
@@ -2930,13 +2900,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RHand" mute="0" unit="1">
                               <Key frame="1" value="0.284" />
-                              <Key frame="273" value="0.2996" />
-                              <Key frame="293" value="0.2936" />
-                              <Key frame="314" value="0.2964" />
-                              <Key frame="374" value="0.2964" />
-                              <Key frame="410" value="0.762" />
-                              <Key frame="416" value="0.762" />
-                              <Key frame="421" value="0.762" />
+                              <Key frame="147" value="0.2996" />
+                              <Key frame="167" value="0.2936" />
+                              <Key frame="188" value="0.2964" />
+                              <Key frame="248" value="0.2964" />
+                              <Key frame="284" value="0.762" />
+                              <Key frame="290" value="0.762" />
+                              <Key frame="295" value="0.762" />
                               <Key frame="550" value="0.762" />
                               <Key frame="731" value="0.762" />
                               <Key frame="967" value="0.762" />
@@ -2946,13 +2916,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RHipPitch" mute="0" unit="0">
                               <Key frame="1" value="6.85315" />
-                              <Key frame="273" value="7.11683" />
-                              <Key frame="293" value="-36.3017" />
-                              <Key frame="314" value="-62.4055" />
-                              <Key frame="374" value="-62.4055" />
-                              <Key frame="410" value="-62.4055" />
-                              <Key frame="416" value="-62.4055" />
-                              <Key frame="421" value="-62.4055" />
+                              <Key frame="147" value="7.11683" />
+                              <Key frame="167" value="-36.3017" />
+                              <Key frame="188" value="-62.4055" />
+                              <Key frame="248" value="-62.4055" />
+                              <Key frame="284" value="-62.4055" />
+                              <Key frame="290" value="-62.4055" />
+                              <Key frame="295" value="-62.4055" />
                               <Key frame="550" value="-62.4055" />
                               <Key frame="731" value="-62.4055" />
                               <Key frame="967" value="-62.4055" />
@@ -2962,13 +2932,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RHipRoll" mute="0" unit="0">
                               <Key frame="1" value="-6.32579" />
-                              <Key frame="273" value="-6.2379" />
-                              <Key frame="293" value="-7.46839" />
-                              <Key frame="314" value="-2.0191" />
-                              <Key frame="374" value="-2.0191" />
-                              <Key frame="410" value="-2.0191" />
-                              <Key frame="416" value="-2.0191" />
-                              <Key frame="421" value="-2.0191" />
+                              <Key frame="147" value="-6.2379" />
+                              <Key frame="167" value="-7.46839" />
+                              <Key frame="188" value="-2.0191" />
+                              <Key frame="248" value="-2.0191" />
+                              <Key frame="284" value="-2.0191" />
+                              <Key frame="290" value="-2.0191" />
+                              <Key frame="295" value="-2.0191" />
                               <Key frame="550" value="-2.0191" />
                               <Key frame="731" value="-2.0191" />
                               <Key frame="967" value="-2.0191" />
@@ -2978,13 +2948,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RHipYawPitch" mute="0" unit="0">
                               <Key frame="1" value="-9.66569" />
-                              <Key frame="273" value="-9.92936" />
-                              <Key frame="293" value="-10.7204" />
-                              <Key frame="314" value="-26.453" />
-                              <Key frame="374" value="-26.453" />
-                              <Key frame="410" value="-26.453" />
-                              <Key frame="416" value="-26.453" />
-                              <Key frame="421" value="-26.453" />
+                              <Key frame="147" value="-9.92936" />
+                              <Key frame="167" value="-10.7204" />
+                              <Key frame="188" value="-26.453" />
+                              <Key frame="248" value="-26.453" />
+                              <Key frame="284" value="-26.453" />
+                              <Key frame="290" value="-26.453" />
+                              <Key frame="295" value="-26.453" />
                               <Key frame="550" value="-26.453" />
                               <Key frame="731" value="-26.453" />
                               <Key frame="967" value="-26.453" />
@@ -2994,13 +2964,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RKneePitch" mute="0" unit="0">
                               <Key frame="1" value="-5.53478" />
-                              <Key frame="273" value="-5.2711" />
-                              <Key frame="293" value="71.1068" />
-                              <Key frame="314" value="57.3957" />
-                              <Key frame="374" value="57.3957" />
-                              <Key frame="410" value="57.3957" />
-                              <Key frame="416" value="57.3957" />
-                              <Key frame="421" value="57.3957" />
+                              <Key frame="147" value="-5.2711" />
+                              <Key frame="167" value="71.1068" />
+                              <Key frame="188" value="57.3957" />
+                              <Key frame="248" value="57.3957" />
+                              <Key frame="284" value="57.3957" />
+                              <Key frame="290" value="57.3957" />
+                              <Key frame="295" value="57.3957" />
                               <Key frame="550" value="57.3957" />
                               <Key frame="731" value="57.3957" />
                               <Key frame="967" value="57.3957" />
@@ -3010,13 +2980,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RShoulderPitch" mute="0" unit="0">
                               <Key frame="1" value="81.478" />
-                              <Key frame="273" value="82.1812" />
-                              <Key frame="293" value="69.9642" />
-                              <Key frame="314" value="73.1283" />
-                              <Key frame="374" value="73.1283" />
-                              <Key frame="410" value="-84.7252" />
-                              <Key frame="416" value="-84.7252" />
-                              <Key frame="421" value="-84.7252" />
+                              <Key frame="147" value="82.1812" />
+                              <Key frame="167" value="69.9642" />
+                              <Key frame="188" value="73.1283" />
+                              <Key frame="248" value="73.1283" />
+                              <Key frame="284" value="-84.7252" />
+                              <Key frame="290" value="-84.7252" />
+                              <Key frame="295" value="-84.7252" />
                               <Key frame="550" value="-84.7252" />
                               <Key frame="731" value="-84.7252" />
                               <Key frame="967" value="-84.7252" />
@@ -3026,13 +2996,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RShoulderRoll" mute="0" unit="0">
                               <Key frame="1" value="-11.2525" />
-                              <Key frame="273" value="-12.3073" />
-                              <Key frame="293" value="-22.8542" />
-                              <Key frame="314" value="-20.4812" />
-                              <Key frame="374" value="-20.4812" />
-                              <Key frame="410" value="-14.4166" />
-                              <Key frame="416" value="-14.4166" />
-                              <Key frame="421" value="-14.4166" />
+                              <Key frame="147" value="-12.3073" />
+                              <Key frame="167" value="-22.8542" />
+                              <Key frame="188" value="-20.4812" />
+                              <Key frame="248" value="-20.4812" />
+                              <Key frame="284" value="-14.4166" />
+                              <Key frame="290" value="-14.4166" />
+                              <Key frame="295" value="-14.4166" />
                               <Key frame="550" value="-14.4166" />
                               <Key frame="731" value="-14.4166" />
                               <Key frame="967" value="-14.4166" />
@@ -3042,13 +3012,13 @@ class MyClass(GeneratedClass):
                             </ActuatorCurve>
                             <ActuatorCurve name="value" actuator="RWristYaw" mute="0" unit="0">
                               <Key frame="1" value="4.56796" />
-                              <Key frame="273" value="5.79845" />
-                              <Key frame="293" value="5.97423" />
-                              <Key frame="314" value="9.48991" />
-                              <Key frame="374" value="9.48991" />
-                              <Key frame="410" value="18.1912" />
-                              <Key frame="416" value="18.1912" />
-                              <Key frame="421" value="18.1912" />
+                              <Key frame="147" value="5.79845" />
+                              <Key frame="167" value="5.97423" />
+                              <Key frame="188" value="9.48991" />
+                              <Key frame="248" value="9.48991" />
+                              <Key frame="284" value="18.1912" />
+                              <Key frame="290" value="18.1912" />
+                              <Key frame="295" value="18.1912" />
                               <Key frame="550" value="18.1912" />
                               <Key frame="731" value="18.1912" />
                               <Key frame="967" value="18.1912" />
@@ -3139,7 +3109,7 @@ class MyClass(GeneratedClass):
                 <BehaviorLayer name="behavior_layer1">
                   <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram>
-                      <Box name="Say" id="10" localization="8" tooltip="Say some text. The text can be localized." x="89" y="21">
+                      <Box name="Say" id="10" localization="8" tooltip="Say some text. The text can be localized." x="387" y="27">
                         <bitmap>media/images/box/interaction/say.png</bitmap>
                         <script language="4">
                           <content>
@@ -3196,7 +3166,7 @@ class MyClass(GeneratedClass):
                         <Parameter name="Text" inherits_from_parent="0" content_type="5" value="Now we come back to the mountain position and then we change sides." default_value="" tooltip="The text you want to say. Don&apos;t forget to translate it!" id="7" />
                         <Resource name="Speech" type="Lock" timeout="0" />
                       </Box>
-                      <Box name="Tadasana (1)" id="11" localization="8" tooltip="NAO stands in Tadasana position (mountain stand).&#x0A;Straight back and legs, arms stretched out and palms facing forward." x="229" y="25">
+                      <Box name="Tadasana (1)" id="11" localization="8" tooltip="NAO stands in Tadasana position (mountain stand).&#x0A;Straight back and legs, arms stretched out and palms facing forward." x="181" y="23">
                         <bitmap>media/images/box/movement/move.png</bitmap>
                         <script language="4">
                           <content>
@@ -5216,22 +5186,8 @@ class MyClass(GeneratedClass):
                             </BehaviorKeyframe>
                           </BehaviorLayer>
                           <ActuatorList model="nao">
-                            <ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0">
-                              <Key frame="1" value="-10.5494" />
-                              <Key frame="22" value="-10.5494" />
-                              <Key frame="30" value="-6.59429" />
-                              <Key frame="37" value="7.90786" />
-                              <Key frame="203" value="4.04062" />
-                              <Key frame="211" value="-11.2525" />
-                            </ActuatorCurve>
-                            <ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0">
-                              <Key frame="1" value="0.876518" />
-                              <Key frame="22" value="0.876518" />
-                              <Key frame="30" value="0.876518" />
-                              <Key frame="37" value="0.876518" />
-                              <Key frame="203" value="0.876518" />
-                              <Key frame="211" value="0.876518" />
-                            </ActuatorCurve>
+                            <ActuatorCurve name="value" actuator="HeadPitch" mute="1" unit="0" />
+                            <ActuatorCurve name="value" actuator="HeadYaw" mute="1" unit="0" />
                             <ActuatorCurve name="value" actuator="LAnklePitch" mute="0" unit="0">
                               <Key frame="1" value="5.88634" />
                               <Key frame="22" value="5.88634" />
@@ -5427,9 +5383,9 @@ class MyClass(GeneratedClass):
                           </ActuatorList>
                         </Timeline>
                       </Box>
-                      <Link inputowner="11" indexofinput="2" outputowner="10" indexofoutput="4" />
-                      <Link inputowner="10" indexofinput="2" outputowner="0" indexofoutput="2" />
-                      <Link inputowner="0" indexofinput="3" outputowner="11" indexofoutput="4" />
+                      <Link inputowner="11" indexofinput="2" outputowner="0" indexofoutput="2" />
+                      <Link inputowner="10" indexofinput="2" outputowner="11" indexofoutput="4" />
+                      <Link inputowner="0" indexofinput="3" outputowner="10" indexofoutput="4" />
                     </Diagram>
                   </BehaviorKeyframe>
                 </BehaviorLayer>
@@ -6210,7 +6166,7 @@ class MyClass(GeneratedClass):
                 <BehaviorLayer name="behavior_layer1">
                   <BehaviorKeyframe name="keyframe1" index="1">
                     <Diagram scale="100">
-                      <Box name="Tadasana (1)" id="8" localization="8" tooltip="NAO stands in Tadasana position (mountain stand).&#x0A;Straight back and legs, arms stretched out and palms facing forward." x="307" y="58">
+                      <Box name="Tadasana (1)" id="8" localization="8" tooltip="NAO stands in Tadasana position (mountain stand).&#x0A;Straight back and legs, arms stretched out and palms facing forward." x="344" y="59">
                         <bitmap>media/images/box/movement/move.png</bitmap>
                         <script language="4">
                           <content>
@@ -6292,7 +6248,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("The first exercise is called Tadasana, or mountain pose.\r\n\r\nTadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.\r\n\r\nStand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Slowly move your focus from your leg muscles; calves, thighs up to your lower back and stomach. Your arms hang relaxed at your sides. You can also keep your hands open in front of you. Roll your shoulders once from front to back so that your back is really straight. Your chin is tilted slightly towards your chest so that your back and neck are in line.\r\n\r\nHold this position for five breaths. Just breathe normally, the breaths don\'t have to be particularly deep or long. Try to let go of all other thoughts and focus your attention on your breathing and posture.\r\n\r\nI\'ll count for you.")]]>
+		self.onStopped("The first exercise is called Tadasana, or mountain pose.\n\nTadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.\n\nStand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Slowly move your focus from your leg muscles; calves, thighs up to your lower back and stomach. Your arms hang relaxed at your sides. You can also keep your hands open in front of you. Roll your shoulders once from front to back so that your back is really straight. Your chin is tilted slightly towards your chest so that your back and neck are in line.\n\nHold this position for five breaths. Just breathe normally, the breaths don\'t have to be particularly deep or long. Try to let go of all other thoughts and focus your attention on your breathing and posture.\n\nI\'ll count for you.")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -8278,24 +8234,8 @@ class MyClass(GeneratedClass):
                             </BehaviorKeyframe>
                           </BehaviorLayer>
                           <ActuatorList model="nao">
-                            <ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0">
-                              <Key frame="1" value="-10.5494" />
-                              <Key frame="122" value="-10.5494" />
-                              <Key frame="128" value="-6.59429" />
-                              <Key frame="294" value="-6.59429" />
-                              <Key frame="300" value="7.90786" />
-                              <Key frame="552" value="4.04062" />
-                              <Key frame="557" value="-11.2525" />
-                            </ActuatorCurve>
-                            <ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0">
-                              <Key frame="1" value="0.876518" />
-                              <Key frame="122" value="0.876518" />
-                              <Key frame="128" value="0.876518" />
-                              <Key frame="294" value="0.876518" />
-                              <Key frame="300" value="0.876518" />
-                              <Key frame="552" value="0.876518" />
-                              <Key frame="557" value="0.876518" />
-                            </ActuatorCurve>
+                            <ActuatorCurve name="value" actuator="HeadPitch" mute="1" unit="0" />
+                            <ActuatorCurve name="value" actuator="HeadYaw" mute="1" unit="0" />
                             <ActuatorCurve name="value" actuator="LAnklePitch" mute="0" unit="0">
                               <Key frame="1" value="5.88634" />
                               <Key frame="122" value="5.88634" />
@@ -8612,10 +8552,92 @@ class MyClass(GeneratedClass):
                         <Parameter name="Timeout (s)" inherits_from_parent="0" content_type="2" value="9" default_value="1" min="0" max="5000" tooltip="Duration the box waits before stimulating the output." id="5" />
                         <Parameter name="Trigger timerOutput if cancelled" inherits_from_parent="0" content_type="0" value="0" default_value="1" tooltip="If the box is currently waiting and cancelled, output will be stimulated." id="6" />
                       </Box>
+                      <Box name="Text Edit" id="2" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="63" y="267">
+                        <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("The first exercise is called Tadasana, or mountain pose.\n\nTadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.")]]>
+                          </content>
+                        </script>
+                        <pluginContent>
+                          <text>
+                            <![CDATA[The first exercise is called Tadasana, or mountain pose.
+
+Tadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.]]>
+                          </text>
+                        </pluginContent>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                        <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+                        <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+                      </Box>
+                      <Box name="Say (1)" id="1" localization="8" tooltip="Say some text. The text can be localized." x="366" y="268">
+                        <bitmap>media/images/box/interaction/say.png</bitmap>
+                        <script language="4">
+                          <content>
+                            <![CDATA[import time
+
+class MyClass(GeneratedClass):
+    def __init__(self):
+        GeneratedClass.__init__(self, False)
+
+    def onLoad(self):
+        self.tts = self.session().service('ALTextToSpeech')
+        self.ttsStop = self.session().service('ALTextToSpeech') #Create another service as wait is blocking if audioout is remote
+        self.bIsRunning = False
+        self.ids = []
+
+    def onUnload(self):
+        for id in self.ids:
+            try:
+                self.ttsStop.stop(id)
+            except:
+                pass
+        while( self.bIsRunning ):
+            time.sleep( 0.2 )
+
+    def onInput_onStart(self):
+        self.bIsRunning = True
+        try:
+            sentence = "\RSPD="+ str( self.getParameter("Speed (%)") ) + "\ "
+            sentence += "\VCT="+ str( self.getParameter("Voice shaping (%)") ) + "\ "
+            sentence += self.getParameter("Text")
+            sentence +=  "\RST\ "
+            id = self.tts.pCall("say",str(sentence))
+            self.ids.append(id)
+            self.tts.wait(id)
+        finally:
+            try:
+                self.ids.remove(id)
+            except:
+                pass
+            if( self.ids == [] ):
+                self.onStopped() # activate output of the box
+                self.bIsRunning = False
+
+    def onInput_onStop(self):
+        self.onUnload()]]>
+                          </content>
+                        </script>
+                        <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+                        <Input name="onStart" type="1" type_size="1" nature="2" inner="0" tooltip="Box behavior starts when a signal is received on this Input." id="2" />
+                        <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this Input." id="3" />
+                        <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when Box behavior is finished." id="4" />
+                        <Parameter name="Voice shaping (%)" inherits_from_parent="1" content_type="1" value="94" default_value="100" min="50" max="150" tooltip='Used to modify at runtime the voice feature (tone, speed). In a slighty&#x0A;different way than pitch and speed, it gives a kind of &quot;gender or age&#x0A;modification&quot; effect.&#x0A;&#x0A;For instance, a quite good male derivation of female voice can be&#x0A;obtained setting this parameter to 78%.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the&#x0A;speed parameter. For example, if you want to decrease by 20% the voice&#x0A;shaping, you will have to increase by 20% the speed to keep a constant&#x0A;average speed.' id="5" />
+                        <Parameter name="Speed (%)" inherits_from_parent="1" content_type="1" value="90" default_value="100" min="50" max="200" tooltip="Changes the speed of the voice.&#x0A;&#x0A;Note: For a better effect, you can compensate this parameter with the voice&#x0A;shaping parameter. For example, if you want to increase by 20% the speed, you&#x0A;will have to decrease by 20% the voice shaping to keep a constant average&#x0A;speed." id="6" />
+                        <Parameter name="Text" inherits_from_parent="0" content_type="5" value="Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one." default_value="" tooltip="The text you want to say. Don&apos;t forget to translate it!" id="7" />
+                        <Resource name="Speech" type="Lock" timeout="0" />
+                      </Box>
                       <Link inputowner="0" indexofinput="3" outputowner="9" indexofoutput="4" />
                       <Link inputowner="9" indexofinput="2" outputowner="6" indexofoutput="4" />
                       <Link inputowner="8" indexofinput="2" outputowner="0" indexofoutput="2" />
                       <Link inputowner="6" indexofinput="2" outputowner="8" indexofoutput="4" />
+                      <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="3" />
                     </Diagram>
                   </BehaviorKeyframe>
                 </BehaviorLayer>
@@ -10717,28 +10739,8 @@ class MyClass(GeneratedClass):
                             </BehaviorKeyframe>
                           </BehaviorLayer>
                           <ActuatorList model="nao">
-                            <ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0">
-                              <Key frame="1" value="-10.3736" />
-                              <Key frame="216" value="-9.74835" />
-                              <Key frame="231" value="-9.40682" />
-                              <Key frame="244" value="-9.40682" />
-                              <Key frame="258" value="-9.40682" />
-                              <Key frame="835" value="-9.40682" />
-                              <Key frame="850" value="-9.40682" />
-                              <Key frame="861" value="-9.40682" />
-                              <Key frame="871" value="-9.40682" />
-                            </ActuatorCurve>
-                            <ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0">
-                              <Key frame="1" value="-0.178186" />
-                              <Key frame="216" value="-0.178186" />
-                              <Key frame="231" value="-0.353968" />
-                              <Key frame="244" value="-0.353968" />
-                              <Key frame="258" value="-0.353968" />
-                              <Key frame="835" value="-0.353968" />
-                              <Key frame="850" value="-0.353968" />
-                              <Key frame="861" value="-0.353968" />
-                              <Key frame="871" value="-0.353968" />
-                            </ActuatorCurve>
+                            <ActuatorCurve name="value" actuator="HeadPitch" mute="1" unit="0" />
+                            <ActuatorCurve name="value" actuator="HeadYaw" mute="1" unit="0" />
                             <ActuatorCurve name="value" actuator="LAnklePitch" mute="0" unit="0">
                               <Key frame="1" value="-25.8426" />
                               <Key frame="216" value="4.31952" />
@@ -13106,30 +13108,8 @@ class MyClass(GeneratedClass):
                             </BehaviorKeyframe>
                           </BehaviorLayer>
                           <ActuatorList model="nao">
-                            <ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0">
-                              <Key frame="1" value="-8.70368" />
-                              <Key frame="25" value="-8.70368" />
-                              <Key frame="45" value="-10.2857" />
-                              <Key frame="76" value="-10.2857" />
-                              <Key frame="88" value="-10.2857" />
-                              <Key frame="98" value="-9.74028" />
-                              <Key frame="275" value="-9.74028" />
-                              <Key frame="446" value="-9.74028" />
-                              <Key frame="461" value="-10.2857" />
-                              <Key frame="476" value="-10.2857" />
-                            </ActuatorCurve>
-                            <ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0">
-                              <Key frame="1" value="-0.353968" />
-                              <Key frame="25" value="-0.353968" />
-                              <Key frame="45" value="-0.353968" />
-                              <Key frame="76" value="-0.353968" />
-                              <Key frame="88" value="-0.353968" />
-                              <Key frame="98" value="0" />
-                              <Key frame="275" value="0" />
-                              <Key frame="446" value="0" />
-                              <Key frame="461" value="-0.353968" />
-                              <Key frame="476" value="-0.353968" />
-                            </ActuatorCurve>
+                            <ActuatorCurve name="value" actuator="HeadPitch" mute="1" unit="0" />
+                            <ActuatorCurve name="value" actuator="HeadYaw" mute="1" unit="0" />
                             <ActuatorCurve name="value" actuator="LAnklePitch" mute="0" unit="0">
                               <Key frame="1" value="5.44688" />
                               <Key frame="25" value="-26.5457" />
@@ -15519,20 +15499,8 @@ class MyClass(GeneratedClass):
                             </BehaviorKeyframe>
                           </BehaviorLayer>
                           <ActuatorList model="">
-                            <ActuatorCurve name="value" actuator="HeadPitch" mute="0" unit="0">
-                              <Key frame="1" value="-10.3736" />
-                              <Key frame="60" value="-10.901" />
-                              <Key frame="365" value="-10.901" />
-                              <Key frame="377" value="-10.901" />
-                              <Key frame="388" value="-10.901" />
-                            </ActuatorCurve>
-                            <ActuatorCurve name="value" actuator="HeadYaw" mute="0" unit="0">
-                              <Key frame="1" value="-0.178186" />
-                              <Key frame="60" value="0.178186" />
-                              <Key frame="365" value="0.178186" />
-                              <Key frame="377" value="-0.178186" />
-                              <Key frame="388" value="-0.178186" />
-                            </ActuatorCurve>
+                            <ActuatorCurve name="value" actuator="HeadPitch" mute="1" unit="0" />
+                            <ActuatorCurve name="value" actuator="HeadYaw" mute="1" unit="0" />
                             <ActuatorCurve name="value" actuator="LAnklePitch" mute="0" unit="0">
                               <Key frame="1" value="-25.8426" />
                               <Key frame="60" value="-40.6915" />
@@ -15712,6 +15680,162 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
+            <Box name="Tadasana" id="7" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="61" y="461">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("The first exercise is called Tadasana, or mountain pose.\n\nTadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.\n\nStand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Slowly move your focus from your leg muscles; calves, thighs up to your lower back and stomach. Your arms hang relaxed at your sides. You can also keep your hands open in front of you. Roll your shoulders once from front to back so that your back is really straight. Your chin is tilted slightly towards your chest so that your back and neck are in line.\n\nHold this position for five breaths. Just breathe normally, the breaths don\'t have to be particularly deep or long. Try to let go of all other thoughts and focus your attention on your breathing and posture.\n\nI\'ll count for you.")]]>
+                </content>
+              </script>
+              <pluginContent>
+                <text>
+                  <![CDATA[The first exercise is called Tadasana, or mountain pose.
+
+Tadasana is an important basic pose in yoga that can help improve posture and reduce stress. It creates awareness of muscles and balance and is a good starting position.
+
+Stand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Slowly move your focus from your leg muscles; calves, thighs up to your lower back and stomach. Your arms hang relaxed at your sides. You can also keep your hands open in front of you. Roll your shoulders once from front to back so that your back is really straight. Your chin is tilted slightly towards your chest so that your back and neck are in line.
+
+Hold this position for five breaths. Just breathe normally, the breaths don't have to be particularly deep or long. Try to let go of all other thoughts and focus your attention on your breathing and posture.
+
+I'll count for you.]]>
+                </text>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+              <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+            </Box>
+            <Box name="Warrior I" id="13" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="321" y="468">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture.\r\n\r\nIt creates awareness of muscles and balance.\r\n\r\nStand with your feet together and your hands at your sides. Make sure your feet are flat on the floor and your shoulders are relaxed and facing downward. Now step your right leg forward \\pau=300\\ and extend your left leg, foot should be facing outwards. \\pau=300\\\r\nBend your right knee as far as you can without it being too strenuous. Raise your arms up, palm facing inwards. Pull your chest and collarbone up and imagine your hands reaching to the ceiling. Your gaze is directed upwards.\r\n\r\nHold this position for five breaths.\r\n\r\nI\'ll count for you again.")]]>
+                </content>
+              </script>
+              <pluginContent>
+                <text>
+                  <![CDATA[Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture.
+
+It creates awareness of muscles and balance.
+
+Stand with your feet together and your hands at your sides. Make sure your feet are flat on the floor and your shoulders are relaxed and facing downward. Now step your right leg forward \pau=300\ and extend your left leg, foot should be facing outwards. \pau=300\
+Bend your right knee as far as you can without it being too strenuous. Raise your arms up, palm facing inwards. Pull your chest and collarbone up and imagine your hands reaching to the ceiling. Your gaze is directed upwards.
+
+Hold this position for five breaths.
+
+I'll count for you again.]]>
+                </text>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+              <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+            </Box>
+            <Box name="Warrior II" id="14" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="568" y="467">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Warrior two is a powerful and challenging yoga pose that has many health benefits. This pose helps with focus and stress relief. It can also help release negative emotions and help you find your peace and calm.\r\n\r\nStep your left leg out to the side with a wide step \\pau=300\\ and turn your right foot out ninety degrees. \\pau=300\\ The left leg should be straight and the right leg bent. Your body should be facing the direction of the left foot. Stretch your arms out to your sides so that they form a line with your shoulders.\r\n\r\nHold this position for five breaths. Focus your attention on your breathing and posture.\r\nI\'m counting for you.")]]>
+                </content>
+              </script>
+              <pluginContent>
+                <text>
+                  <![CDATA[Warrior two is a powerful and challenging yoga pose that has many health benefits. This pose helps with focus and stress relief. It can also help release negative emotions and help you find your peace and calm.
+
+Step your left leg out to the side with a wide step \pau=300\ and turn your right foot out ninety degrees. \pau=300\ The left leg should be straight and the right leg bent. Your body should be facing the direction of the left foot. Stretch your arms out to your sides so that they form a line with your shoulders.
+
+Hold this position for five breaths. Focus your attention on your breathing and posture.
+I'm counting for you.]]>
+                </text>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+              <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+            </Box>
+            <Box name="Tadasana" id="15" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="814" y="469">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Stand up straight with your knees slightly bent. Your arms hang relaxed at your sides, your palms open in front of you. Tilt your chin slightly to your chest and breathe along the muscles in your body.\r\n\\pau=1000\\")]]>
+                </content>
+              </script>
+              <pluginContent>
+                <text>
+                  <![CDATA[Stand up straight with your knees slightly bent. Your arms hang relaxed at your sides, your palms open in front of you. Tilt your chin slightly to your chest and breathe along the muscles in your body.
+\pau=1000\]]>
+                </text>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+              <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+            </Box>
+            <Box name="Warrior I" id="17" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="1066" y="469">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("Put your left leg forward and bend it. The right leg is stretched out, the foot pointing outwards. Stretch your arms up, with your palms facing inwards. Try to pull your collarbone up.\r\nBreathe normally, let your thoughts flow.")]]>
+                </content>
+              </script>
+              <pluginContent>
+                <text>
+                  <![CDATA[Put your left leg forward and bend it. The right leg is stretched out, the foot pointing outwards. Stretch your arms up, with your palms facing inwards. Try to pull your collarbone up.
+Breathe normally, let your thoughts flow.]]>
+                </text>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+              <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+            </Box>
+            <Box name="Warrior II" id="18" localization="8" tooltip="Send the text you entered when the input is stimulated." plugin="textedit_plugin" x="1312" y="475">
+              <bitmap>media/images/box/interaction/vocabulary.png</bitmap>
+              <script language="4">
+                <content>
+                  <![CDATA[# /!\ Generated content. Do not edit!
+class MyClass(GeneratedClass):
+	def __init__(self):
+		GeneratedClass.__init__(self)
+
+	def onInput_onStart(self):
+		self.onStopped("You stay in the position and turn your body towards the middle. The left foot points forward, the right foot towards the middle, like the upper body. Stretch your arms out to the sides.")]]>
+                </content>
+              </script>
+              <pluginContent>
+                <text>
+                  <![CDATA[You stay in the position and turn your body towards the middle. The left foot points forward, the right foot towards the middle, like the upper body. Stretch your arms out to the sides.]]>
+                </text>
+              </pluginContent>
+              <Input name="onLoad" type="1" type_size="1" nature="0" inner="1" tooltip="Signal sent when Diagram is loaded." id="1" />
+              <Input name="onStart" type="1" type_size="1" nature="1" inner="0" tooltip="To send the text on the output." id="2" />
+              <Output name="onStopped" type="3" type_size="1" nature="2" inner="0" tooltip="The text you entered." id="3" />
+            </Box>
             <Link inputowner="11" indexofinput="2" outputowner="0" indexofoutput="2" />
             <Link inputowner="8" indexofinput="2" outputowner="9" indexofoutput="3" />
             <Link inputowner="0" indexofinput="4" outputowner="8" indexofoutput="4" />
@@ -15724,7 +15848,7 @@ class MyClass(GeneratedClass):
             <Link inputowner="2" indexofinput="2" outputowner="4" indexofoutput="3" />
             <Link inputowner="1" indexofinput="2" outputowner="2" indexofoutput="3" />
             <Link inputowner="9" indexofinput="2" outputowner="1" indexofoutput="3" />
-            <Link inputowner="10" indexofinput="2" outputowner="0" indexofoutput="2" />
+            <Link inputowner="5" indexofinput="2" outputowner="0" indexofoutput="2" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>

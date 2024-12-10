@@ -79,6 +79,14 @@
         </message>
     </context>
     <context>
+        <name>behavior_with_feedback/behavior.xar:/Say</name>
+        <message>
+            <source>Well done! Virabhadrasana one is a good pose to strengthen the legs, arms and shoulders and improve posture. We move on to Virabhadrasana two, known as warrior two.</source>
+            <comment>Text</comment>
+            <translation type="obsolete">Well done! Virabhadrasana one is a good pose to strengthen the legs, arms and shoulders and improve posture. We move on to Virabhadrasana two, known as warrior two.</translation>
+        </message>
+    </context>
+    <context>
         <name>behavior_with_feedback/behavior.xar:/Tadasana (1)/Say</name>
         <message>
             <location filename="behavior_with_feedback/behavior.xar" line="0"/>
@@ -113,6 +121,15 @@
     </context>
     <context>
         <name>behavior_with_feedback/behavior.xar:/Tadasana/Say</name>
+        <message>
+            <location filename="behavior_with_feedback/behavior.xar" line="0"/>
+            <source>Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</translation>
+        </message>
+    </context>
+    <context>
+        <name>behavior_with_feedback/behavior.xar:/Tadasana/Say (1)</name>
         <message>
             <location filename="behavior_with_feedback/behavior.xar" line="0"/>
             <source>Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</source>
