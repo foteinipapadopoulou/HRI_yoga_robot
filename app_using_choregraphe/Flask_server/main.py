@@ -1,7 +1,6 @@
 from flask import Flask, request, jsonify
-import base64
 import os
-
+from refine_feedback import get_refined_feedback
 from yoga_feedback import get_feedback 
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
@@ -13,26 +12,12 @@ app = Flask(__name__)
 def get_yoga_feedback():
 	try:
 		pose_name = request.json.get('pose_name')
-		image_data = request.json.get('image_data')
-
-		print(f"Received pose_name: {pose_name}")
-		print(f"Received image data: {image_data[:100]}...")
-		
-		image_bytes = base64.b64decode(image_data)
-
-		image_path = 'received_image.jpg'
-
-		#save the image
-		with open(image_path, 'wb') as image_file:
-			image_file.write(image_bytes)
 
 		#give feedback
-		message = get_feedback(image_path, pose_name)
+		message = get_feedback(pose_name)
 
-		#here we can add something like llm to fix the message feedback
-		
-		#remove image
-		os.remove(image_path)
+		message = get_refined_feedback(message)
+		print(message)
 
 		return jsonify(message=message), 200
 	except Exception as e:

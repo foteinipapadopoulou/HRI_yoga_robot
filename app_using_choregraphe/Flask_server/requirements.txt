@@ -6,3 +6,7 @@ numpy
 scipy
 matplotlib
 requests
+# transformers
+# torch
+# torchvision
+

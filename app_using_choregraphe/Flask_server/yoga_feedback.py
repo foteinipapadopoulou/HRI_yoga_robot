@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 from utils import calculate_angle, compare_pose, dif_compare, diff_compare_angle, get_pose_target_image
 import time
+from refine_feedback import get_refined_feedback
 
 mp_drawing = mp.solutions.drawing_utils
 mp_pose = mp.solutions.pose
@@ -226,7 +227,7 @@ def extractKeypoint(path):
         cv2.destroyAllWindows()
     return landmarks, keypoints, angle, image
 
-def get_feedback(image_path, pose_name):
+def get_feedback(pose_name):
     target_image_path = get_pose_target_image(pose_name)
     x = extractKeypoint(target_image_path)
     dim = (560, 360)
@@ -235,7 +236,12 @@ def get_feedback(image_path, pose_name):
     angle_target = x[2]
     point_target = x[1]
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
-        image = cv2.imread(image_path)
+        cam = cv2.VideoCapture(0)
+        ret, image = cam.read()
+        cv2.imshow('MediaPipe Feed', image)
+        if not ret:
+            print("Something is wrong with the webcam.")
+            return
         image_rgb = cv2.cvtColor(image, cv2.COLOR_BGR2RGB)
         image.flags.writeable = False
         results = pose.process(image_rgb)
@@ -244,7 +250,7 @@ def get_feedback(image_path, pose_name):
         image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
         image_height, image_width, _ = image.shape
         image = cv2.resize(image, (int(image_width * (860 / image_height)), 860))
-
+        cam.release()
         try:
             landmarks = results.pose_landmarks.landmark
 
@@ -361,6 +367,7 @@ def get_feedback(image_path, pose_name):
 
 
 if __name__ == '__main__':
-    image_path = "images/warrior.jpg"
-    print(get_feedback(image_path, "tadasana"))
+    message = get_feedback("tadasana")
+    refined_message = get_refined_feedback(message)
+    print(refined_message)
     #time.sleep(1000)
