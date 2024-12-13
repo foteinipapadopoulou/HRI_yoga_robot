@@ -3,6 +3,7 @@
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="behavior_with_feedback" xar="behavior.xar" />
+        <BehaviorDescription name="behavior" src="try_new_poses" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
     <Resources>
