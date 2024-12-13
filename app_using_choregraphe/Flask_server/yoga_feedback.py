@@ -238,7 +238,9 @@ def get_feedback(pose_name):
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
         cam = cv2.VideoCapture(0)
         ret, image = cam.read()
+        image = cv2.flip(image, 1 )
         cv2.imshow('MediaPipe Feed', image)
+        
         if not ret:
             print("Something is wrong with the webcam.")
             return
@@ -351,8 +353,9 @@ def get_feedback(pose_name):
 
                 message, stage = compare_pose(image, angle_point, angle, angle_target)
                 a_score = diff_compare_angle(angle, angle_target)
-
+                print("Pose Score: ", str(int((1 - p_score) * 100)))
                 if (p_score >= a_score):
+                    
                     cv2.putText(image, str(int((1 - a_score) * 100)), (80, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, [0, 0, 255], 2,
                                 cv2.LINE_AA)
 
@@ -372,17 +375,9 @@ def get_feedback(pose_name):
             cv2.waitKey(10)
             cv2.destroyAllWindows()
             return message
-    else:
-        return "No pose detected"
+        except:
+            return "No pose detected"
 
 
 if __name__ == '__main__':
-<<<<<<< Updated upstream
-    message = get_feedback("tadasana")
-    refined_message = get_refined_feedback(message)
-    print(refined_message)
-=======
-    image_path = "images/warrior.jpg"
     print(get_feedback("tadasana"))
->>>>>>> Stashed changes
-    #time.sleep(1000)
