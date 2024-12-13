@@ -254,120 +254,135 @@ def get_feedback(pose_name):
         try:
             landmarks = results.pose_landmarks.landmark
 
-            shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,
-                        landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y,
-                        landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].z,
-                        round(landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].visibility * 100, 2)]
-            elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,
-                     landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y,
-                     landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].z,
-                     round(landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].visibility * 100, 2)]
-            wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,
-                     landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y,
-                     landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].z,
-                     round(landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].visibility * 100, 2)]
+            image.flags.writeable = True
+            image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
+            image_height, image_width, _ = image.shape
+            image = cv2.resize(image, (int(image_width * (860 / image_height)), 860))
 
-            angle_point = []
+            try:
+                landmarks = results.pose_landmarks.landmark
 
-            right_elbow = [landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value].x,
-                           landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value].y]
-            angle_point.append(right_elbow)
+                shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,
+                            landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y,
+                            landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].z,
+                            round(landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].visibility * 100, 2)]
+                elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,
+                        landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y,
+                        landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].z,
+                        round(landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].visibility * 100, 2)]
+                wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,
+                        landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y,
+                        landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].z,
+                        round(landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].visibility * 100, 2)]
 
-            left_elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,
-                          landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y]
-            angle_point.append(left_elbow)
+                angle_point = []
 
-            right_shoulder = [landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].x,
-                              landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].y]
-            angle_point.append(right_shoulder)
+                right_elbow = [landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value].x,
+                            landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value].y]
+                angle_point.append(right_elbow)
 
-            left_shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,
-                             landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y]
-            angle_point.append(left_shoulder)
+                left_elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,
+                            landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y]
+                angle_point.append(left_elbow)
 
-            right_wrist = [landmarks[mp_pose.PoseLandmark.RIGHT_WRIST.value].x,
-                           landmarks[mp_pose.PoseLandmark.RIGHT_WRIST.value].y]
+                right_shoulder = [landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].x,
+                                landmarks[mp_pose.PoseLandmark.RIGHT_SHOULDER.value].y]
+                angle_point.append(right_shoulder)
 
-            left_wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,
-                          landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y]
+                left_shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,
+                                landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y]
+                angle_point.append(left_shoulder)
 
-            right_hip = [landmarks[mp_pose.PoseLandmark.RIGHT_HIP.value].x,
-                         landmarks[mp_pose.PoseLandmark.RIGHT_HIP.value].y]
-            angle_point.append(right_hip)
+                right_wrist = [landmarks[mp_pose.PoseLandmark.RIGHT_WRIST.value].x,
+                            landmarks[mp_pose.PoseLandmark.RIGHT_WRIST.value].y]
 
-            left_hip = [landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].x,
-                        landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].y]
-            angle_point.append(left_hip)
+                left_wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,
+                            landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y]
 
-            right_knee = [landmarks[mp_pose.PoseLandmark.RIGHT_KNEE.value].x,
-                          landmarks[mp_pose.PoseLandmark.RIGHT_KNEE.value].y]
-            angle_point.append(right_knee)
+                right_hip = [landmarks[mp_pose.PoseLandmark.RIGHT_HIP.value].x,
+                            landmarks[mp_pose.PoseLandmark.RIGHT_HIP.value].y]
+                angle_point.append(right_hip)
 
-            left_knee = [landmarks[mp_pose.PoseLandmark.LEFT_KNEE.value].x,
-                         landmarks[mp_pose.PoseLandmark.LEFT_KNEE.value].y]
-            angle_point.append(left_knee)
-            right_ankle = [landmarks[mp_pose.PoseLandmark.RIGHT_ANKLE.value].x,
-                           landmarks[mp_pose.PoseLandmark.RIGHT_ANKLE.value].y]
+                left_hip = [landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].x,
+                            landmarks[mp_pose.PoseLandmark.LEFT_HIP.value].y]
+                angle_point.append(left_hip)
 
-            left_ankle = [landmarks[mp_pose.PoseLandmark.LEFT_ANKLE.value].x,
-                          landmarks[mp_pose.PoseLandmark.LEFT_ANKLE.value].y]
+                right_knee = [landmarks[mp_pose.PoseLandmark.RIGHT_KNEE.value].x,
+                            landmarks[mp_pose.PoseLandmark.RIGHT_KNEE.value].y]
+                angle_point.append(right_knee)
 
-            keypoints = []
-            for point in landmarks:
-                keypoints.append({
-                    'X': point.x,
-                    'Y': point.y,
-                    'Z': point.z,
-                })
+                left_knee = [landmarks[mp_pose.PoseLandmark.LEFT_KNEE.value].x,
+                            landmarks[mp_pose.PoseLandmark.LEFT_KNEE.value].y]
+                angle_point.append(left_knee)
+                right_ankle = [landmarks[mp_pose.PoseLandmark.RIGHT_ANKLE.value].x,
+                            landmarks[mp_pose.PoseLandmark.RIGHT_ANKLE.value].y]
 
-            p_score = dif_compare(keypoints, point_target)
+                left_ankle = [landmarks[mp_pose.PoseLandmark.LEFT_ANKLE.value].x,
+                            landmarks[mp_pose.PoseLandmark.LEFT_ANKLE.value].y]
 
-            angle = []
+                keypoints = []
+                for point in landmarks:
+                    keypoints.append({
+                        'X': point.x,
+                        'Y': point.y,
+                        'Z': point.z,
+                    })
 
-            angle1 = calculate_angle(right_shoulder, right_elbow, right_wrist)
-            angle.append(int(angle1))
-            angle2 = calculate_angle(left_shoulder, left_elbow, left_wrist)
-            angle.append(int(angle2))
-            angle3 = calculate_angle(right_elbow, right_shoulder, right_hip)
-            angle.append(int(angle3))
-            angle4 = calculate_angle(left_elbow, left_shoulder, left_hip)
-            angle.append(int(angle4))
-            angle5 = calculate_angle(right_shoulder, right_hip, right_knee)
-            angle.append(int(angle5))
-            angle6 = calculate_angle(left_shoulder, left_hip, left_knee)
-            angle.append(int(angle6))
-            angle7 = calculate_angle(right_hip, right_knee, right_ankle)
-            angle.append(int(angle7))
-            angle8 = calculate_angle(left_hip, left_knee, left_ankle)
-            angle.append(int(angle8))
+                p_score = dif_compare(keypoints, point_target)
 
-            message, stage = compare_pose(image, angle_point, angle, angle_target)
-            a_score = diff_compare_angle(angle, angle_target)
+                angle = []
 
-            if (p_score >= a_score):
-                cv2.putText(image, str(int((1 - a_score) * 100)), (80, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, [0, 0, 255], 2,
-                            cv2.LINE_AA)
+                angle1 = calculate_angle(right_shoulder, right_elbow, right_wrist)
+                angle.append(int(angle1))
+                angle2 = calculate_angle(left_shoulder, left_elbow, left_wrist)
+                angle.append(int(angle2))
+                angle3 = calculate_angle(right_elbow, right_shoulder, right_hip)
+                angle.append(int(angle3))
+                angle4 = calculate_angle(left_elbow, left_shoulder, left_hip)
+                angle.append(int(angle4))
+                angle5 = calculate_angle(right_shoulder, right_hip, right_knee)
+                angle.append(int(angle5))
+                angle6 = calculate_angle(left_shoulder, left_hip, left_knee)
+                angle.append(int(angle6))
+                angle7 = calculate_angle(right_hip, right_knee, right_ankle)
+                angle.append(int(angle7))
+                angle8 = calculate_angle(left_hip, left_knee, left_ankle)
+                angle.append(int(angle8))
 
-            else:
-                cv2.putText(image, str(int((1 - p_score) * 100)), (80, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, [0, 0, 255], 2,
-                            cv2.LINE_AA)
+                message, stage = compare_pose(image, angle_point, angle, angle_target)
+                a_score = diff_compare_angle(angle, angle_target)
 
-        except:
-            pass
+                if (p_score >= a_score):
+                    cv2.putText(image, str(int((1 - a_score) * 100)), (80, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, [0, 0, 255], 2,
+                                cv2.LINE_AA)
 
-        mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
-                                  mp_drawing.DrawingSpec(color=(0, 0, 255), thickness=4, circle_radius=4),
-                                  mp_drawing.DrawingSpec(color=(0, 255, 0), thickness=3, circle_radius=3)
-                                  )
-        cv2.imshow('MediaPipe Feed', image)
+                else:
+                    cv2.putText(image, str(int((1 - p_score) * 100)), (80, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, [0, 0, 255], 2,
+                                cv2.LINE_AA)
 
-        cv2.waitKey(10)
-        cv2.destroyAllWindows()
-        return message
+            except:
+                pass
+
+            mp_drawing.draw_landmarks(image, results.pose_landmarks, mp_pose.POSE_CONNECTIONS,
+                                    mp_drawing.DrawingSpec(color=(0, 0, 255), thickness=4, circle_radius=4),
+                                    mp_drawing.DrawingSpec(color=(0, 255, 0), thickness=3, circle_radius=3)
+                                    )
+            cv2.imshow('MediaPipe Feed', image)
+
+            cv2.waitKey(10)
+            cv2.destroyAllWindows()
+            return message
+    else:
+        return "No pose detected"
 
 
 if __name__ == '__main__':
+<<<<<<< Updated upstream
     message = get_feedback("tadasana")
     refined_message = get_refined_feedback(message)
     print(refined_message)
+=======
+    image_path = "images/warrior.jpg"
+    print(get_feedback("tadasana"))
+>>>>>>> Stashed changes
     #time.sleep(1000)

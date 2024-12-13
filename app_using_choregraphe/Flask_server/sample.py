@@ -2,7 +2,7 @@ import requests
 import base64
 import os
 
-url = "http://127.0.0.1:5000/get_yoga_feedback"
+url = "http://192.168.0.101:5000/get_yoga_feedback"
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 image_path = os.path.join(current_directory, 'images/cat.jpg')
