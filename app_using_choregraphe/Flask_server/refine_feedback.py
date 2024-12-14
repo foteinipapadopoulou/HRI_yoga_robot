@@ -38,7 +38,8 @@ def get_refined_feedback(simple_feedback):
     list_ = simple_feedback.split(".")
     list_ = set(list_)
     simple_feedback = ". ".join(list_)
-    final_response = simple_feedback.replace(".", ". \\pau=300\\")
+  
+    final_response = simple_feedback.replace(".", " \\pau=300\\")
     return final_response
 
 if __name__ == "__main__":

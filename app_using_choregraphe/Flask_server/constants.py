@@ -1,42 +1,42 @@
+positive_messages = [
+    "You are doing great!",
+    "Keep it up!",
+    "You are doing amazing!",
+    "You are doing fantastic!",
+    "Keep going!",
+]
 poses = {
     "chair":{
         "image_path": "chair.jpg"
     },
-    "child":{
-        "image_path": "child.jpg"
-    },
-    "cobra":{
-        "image_path": "cobra.jpg"
+    "chair_reversed":{
+        "image_path": "chair_reversed.jpg"
     },
     "half_standing_forward_bend":{
         "image_path": "half_standing_forward_bend.jpg"
     },
-    "legs_up_the_wall":{
-        "image_path": "legs_up_the_wall.jpg"
-    },
-    "low_lunge":{
-        "image_path": "low_lunge.jpg"
+    "half_standing_forward_bend_reversed":{
+        "image_path": "half_standing_forward_bend_reversed.jpg"
     },
     "staff":{
         "image_path": "staff.jpg"
     },
+    "staff_reversed":{
+        "image_path": "staff_reversed.jpg"
+    },
     "warrior": {
         "image_path": "warrior.jpg",
+    },
+    "warrior_reversed": {
+        "image_path": "warrior_reversed.jpg",
     },
     "warrior_2": {
         "image_path": "warrior_2.jpg",
     },
+    "warrior_2_reversed": {
+        "image_path": "warrior_2_reversed.jpg",
+    },
     "tadasana": {
         "image_path": "tadasana.jpg",
-    },
-    "cat": {
-        "image_path": "cat.jpg",
-    },
-    "cow": {
-        "image_path": "cow.jpg",
-    },
-    "corpse": {
-        "image_path": "corpse.jpg",
-    },
-    
+    }
 }

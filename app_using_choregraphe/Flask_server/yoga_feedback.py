@@ -8,6 +8,7 @@ import mediapipe as mp
 import numpy as np
 import pandas as pd
 from utils import calculate_angle, compare_pose, dif_compare, diff_compare_angle, get_pose_target_image
+from constants import positive_messages
 import time
 from refine_feedback import get_refined_feedback
 
@@ -235,6 +236,8 @@ def get_feedback(pose_name):
     cv2.imshow('target', resized)
     angle_target = x[2]
     point_target = x[1]
+
+    time.sleep(5)
     with mp_pose.Pose(min_detection_confidence=0.5, min_tracking_confidence=0.5) as pose:
         cam = cv2.VideoCapture(0)
         ret, image = cam.read()
@@ -255,6 +258,20 @@ def get_feedback(pose_name):
         cam.release()
         try:
             landmarks = results.pose_landmarks.landmark
+            # Verify if all the necessary landmarks are detected
+            necessary_landmarks = [
+                mp_pose.PoseLandmark.RIGHT_ELBOW, mp_pose.PoseLandmark.LEFT_ELBOW,
+                mp_pose.PoseLandmark.RIGHT_SHOULDER, mp_pose.PoseLandmark.LEFT_SHOULDER,
+                mp_pose.PoseLandmark.RIGHT_WRIST, mp_pose.PoseLandmark.LEFT_WRIST,
+                mp_pose.PoseLandmark.RIGHT_HIP, mp_pose.PoseLandmark.LEFT_HIP,
+                mp_pose.PoseLandmark.RIGHT_KNEE, mp_pose.PoseLandmark.LEFT_KNEE,
+                mp_pose.PoseLandmark.RIGHT_ANKLE, mp_pose.PoseLandmark.LEFT_ANKLE
+            ]
+
+            # Check if all landmarks are visible
+            if not results.pose_landmarks:
+                cv2.destroyAllWindows()
+                return "No pose detected. Ensure your entire body is visible." 
 
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
@@ -263,20 +280,7 @@ def get_feedback(pose_name):
 
             try:
                 landmarks = results.pose_landmarks.landmark
-
-                shoulder = [landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].x,
-                            landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].y,
-                            landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].z,
-                            round(landmarks[mp_pose.PoseLandmark.LEFT_SHOULDER.value].visibility * 100, 2)]
-                elbow = [landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].x,
-                        landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].y,
-                        landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].z,
-                        round(landmarks[mp_pose.PoseLandmark.LEFT_ELBOW.value].visibility * 100, 2)]
-                wrist = [landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].x,
-                        landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].y,
-                        landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].z,
-                        round(landmarks[mp_pose.PoseLandmark.LEFT_WRIST.value].visibility * 100, 2)]
-
+                
                 angle_point = []
 
                 right_elbow = [landmarks[mp_pose.PoseLandmark.RIGHT_ELBOW.value].x,
@@ -372,11 +376,13 @@ def get_feedback(pose_name):
                                     )
             cv2.imshow('MediaPipe Feed', image)
 
-            cv2.waitKey(10)
+            cv2.waitKey(10000)
             cv2.destroyAllWindows()
+            if int((1 - p_score) * 100) >=85:
+                return np.random.choice(positive_messages)
             return message
         except:
-            return "No pose detected"
+            return "No human detected"
 
 
 if __name__ == '__main__':

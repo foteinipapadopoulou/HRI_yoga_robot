@@ -6,7 +6,7 @@ url = "http://127.0.0.1:5000/get_yoga_feedback"
 
 current_directory = os.path.dirname(os.path.abspath(__file__))
 payload = {
-    "pose_name": "warrior",
+    "pose_name": "tadasana",
 }
 
 response = requests.post(url, json=payload)
