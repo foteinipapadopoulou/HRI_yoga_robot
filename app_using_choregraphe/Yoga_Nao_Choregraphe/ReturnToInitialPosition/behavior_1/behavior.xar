@@ -53,7 +53,7 @@ class MyClass(GeneratedClass):
               <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
               <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
             </Box>
-            <Box name="Random Moves and Postures" id="2" localization="8" tooltip="" x="572" y="364">
+            <Box name="Random Moves and Postures" id="2" localization="8" tooltip="" x="494" y="325">
               <bitmap>media/images/box/box-python-script.png</bitmap>
               <script language="4">
                 <content>
