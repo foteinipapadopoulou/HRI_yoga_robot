@@ -273,6 +273,11 @@ def get_feedback(pose_name):
                 cv2.destroyAllWindows()
                 return "No pose detected. Ensure your entire body is visible." 
 
+            # check if all necessary landmarks are detected
+            for landmark in necessary_landmarks:
+                if landmarks[landmark.value].visibility < 0.2:
+                    cv2.destroyAllWindows()
+                    return "Ensure your entire body is visible."
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
             image_height, image_width, _ = image.shape
@@ -382,6 +387,7 @@ def get_feedback(pose_name):
                 return np.random.choice(positive_messages)
             return message
         except:
+            cv2.destroyAllWindows()
             return "No human detected"
 
 
