@@ -272,12 +272,12 @@ def get_feedback(pose_name):
                     print("Ensure your entire body is visible.")
                     return ""
   
-            # check if all necessary landmarks are detected
-            for landmark in necessary_landmarks:
-                if landmarks[landmark.value].visibility < 0.2:
-                    cv2.destroyAllWindows()
-                    print("Ensure your entire body is visible.")
-                    return ""
+            # # check if all necessary landmarks are detected
+            # for landmark in necessary_landmarks:
+            #     if landmarks[landmark.value].visibility < 0.2:
+            #         cv2.destroyAllWindows()
+            #         print("Ensure your entire body is visible.")
+            #         return ""
             
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
