@@ -273,7 +273,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("I am NAO, a yoga teacher and I am glad that you are all here.\n\\pau=1000\\\nToday\'s yoga session is to do basic yoga exercises with you to improve your posture, relaxation and concentration and low your stress.\n\\pau=1000\\\nLet\'s start with a simple breathing exercise. Stand comfortably and close your eyes.\n\\pau=1000\\\nBreathe in and out deeply and feel your chest rise and fall.\n\\pau=1000\\\nFocus on your breathing and try to let go of all other thoughts. \\pau=1000\\ Now take three more relaxed breaths.\n\\pau=8000\\\nNow that you have your breathing under control, let\'s move on to the yoga exercises. \\pau=1000\\ Please make sure you have enough space to move your arms and legs. \\pau=1000\\ I will always explain the exercise first, then you hold it for five breaths.\\pau=1000\\")]]>
+		self.onStopped("I am NAO, a yoga teacher and I am glad that you are all here.\r\n\\pau=1000\\\r\nToday\'s yoga session is to do basic yoga exercises with you to improve your posture, relaxation and concentration and low your stress.\r\n\\pau=1000\\\r\nLet\'s start with a simple breathing exercise. Stand comfortably and close your eyes.\r\n\\pau=1000\\\r\nBreathe in and out deeply and feel your chest rise and fall.\r\n\\pau=1000\\\r\nFocus on your breathing and try to let go of all other thoughts. \\pau=1000\\ Now take three more relaxed breaths.\r\n\\pau=8000\\\r\nNow that you have your breathing under control, let\'s move on to the yoga exercises. \\pau=1000\\ Please make sure you have enough space to move your arms and legs. \\pau=1000\\ I will always explain the exercise first, then you hold it for five breaths.\\pau=1000\\")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -662,12 +662,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Now, let\'s move to another pose \\pau=300\\ Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture. \\pau=1000\\\n\nIt creates awareness of muscles and balance. \\pau=1000\\")]]>
+		self.onStopped("Now, let\'s move on to another pose \\pau=300\\ Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture. \\pau=1000\\\n\nIt creates awareness of muscles and balance. \\pau=1000\\")]]>
                           </content>
                         </script>
                         <pluginContent>
                           <text>
-                            <![CDATA[Now, let's move to another pose \pau=300\ Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture. \pau=1000\
+                            <![CDATA[Now, let's move on to another pose \pau=300\ Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture. \pau=1000\
 
 It creates awareness of muscles and balance. \pau=1000\]]>
                           </text>
@@ -975,7 +975,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Find a comfortable and stable stance to start.\\pau=300\\\nTo prevent the front knee from collapsing in, engage the muscles around the outer hip to externally rotate the leg. \\pau=300\\")]]>
+		self.onStopped("Find a comfortable and stable stance to start.\\pau=300\\\r\nTo prevent the front knee from collapsing in, engage the muscles around the outer hip to externally rotate the leg. \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -1436,7 +1436,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("To prevent the ribs from flaring out, engage the core and draw the tailbone down towards the mat, which also keeps the lower back long. \\pau=300\\\n")]]>
+		self.onStopped("To prevent the ribs from flaring out, engage the core and draw the tailbone down towards the mat, which also keeps the lower back long. \\pau=300\\\r\n")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -6010,7 +6010,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Warrior II" id="3" localization="8" tooltip="Enter description here" x="582" y="443">
+            <Box name="Warrior II" id="3" localization="8" tooltip="Enter description here" x="408" y="498">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -8574,7 +8574,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Dandasana" id="7" localization="8" tooltip="Enter description here" x="722" y="448">
+            <Box name="Dandasana" id="7" localization="8" tooltip="Enter description here" x="548" y="503">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -12164,7 +12164,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Don\'t look too far up; \\pau=300\\ keep the neck aligned with the spine. \\pau=300\\\n")]]>
+		self.onStopped("Don\'t look too far up; \\pau=300\\ keep the neck aligned with the spine. \\pau=300\\\r\n")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -18247,7 +18247,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Find a comfortable and stable stance to start.\\pau=300\\\nTo prevent the front knee from collapsing in, engage the muscles around the outer hip to externally rotate the leg. \\pau=300\\")]]>
+		self.onStopped("Find a comfortable and stable stance to start.\\pau=300\\\r\nTo prevent the front knee from collapsing in, engage the muscles around the outer hip to externally rotate the leg. \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -18708,7 +18708,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("To prevent the ribs from flaring out, engage the core and draw the tailbone down towards the mat, which also keeps the lower back long. \\pau=300\\\n")]]>
+		self.onStopped("To prevent the ribs from flaring out, engage the core and draw the tailbone down towards the mat, which also keeps the lower back long. \\pau=300\\\r\n")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -20336,7 +20336,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Warrior II Reversed" id="4" localization="8" tooltip="Enter description here" x="582" y="577">
+            <Box name="Warrior II Reversed" id="4" localization="8" tooltip="Enter description here" x="408" y="632">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -22788,7 +22788,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Dandasana Reversed" id="21" localization="8" tooltip="Enter description here" x="730" y="576">
+            <Box name="Dandasana Reversed" id="21" localization="8" tooltip="Enter description here" x="556" y="631">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -27789,12 +27789,12 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("From your sitting position, slowly stand up with your feet hip width apart. \\pau=1000\\ Root down through the feet, engage your legs, \\pau=300\\ draw the lower belly in and up, \\pau=300\\ and bend forward. Use your back muscles to bring your upper body almost parallel with the ground. \\pau=300\\\r\nDraw the shoulder blades down and create length through the spine, \\pau=300\\ from the tailbone to the top of the head. \\pau=300\\\r\nPlace your hands on your shins, or your fingertips on the floor.  \\pau=300\\\r\nLook forward, keeping the back of the neck long, \\pau=300\\ opening the front of the chest. ")]]>
+		self.onStopped("Let\'s go back to the Half Standing Forward pose. \\pau=300\\ From your sitting position, slowly stand up with your feet hip width apart. \\pau=1000\\ Root down through the feet, engage your legs, \\pau=300\\ draw the lower belly in and up, \\pau=300\\ and bend forward. Use your back muscles to bring your upper body almost parallel with the ground. \\pau=300\\\nDraw the shoulder blades down and create length through the spine, \\pau=300\\ from the tailbone to the top of the head. \\pau=300\\\nPlace your hands on your shins, or your fingertips on the floor.  \\pau=300\\\nLook forward, keeping the back of the neck long, \\pau=300\\ opening the front of the chest. ")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
                                     <text>
-                                      <![CDATA[From your sitting position, slowly stand up with your feet hip width apart. \pau=1000\ Root down through the feet, engage your legs, \pau=300\ draw the lower belly in and up, \pau=300\ and bend forward. Use your back muscles to bring your upper body almost parallel with the ground. \pau=300\
+                                      <![CDATA[Let's go back to the Half Standing Forward pose. \pau=300\ From your sitting position, slowly stand up with your feet hip width apart. \pau=1000\ Root down through the feet, engage your legs, \pau=300\ draw the lower belly in and up, \pau=300\ and bend forward. Use your back muscles to bring your upper body almost parallel with the ground. \pau=300\
 Draw the shoulder blades down and create length through the spine, \pau=300\ from the tailbone to the top of the head. \pau=300\
 Place your hands on your shins, or your fingertips on the floor.  \pau=300\
 Look forward, keeping the back of the neck long, \pau=300\ opening the front of the chest. ]]>
@@ -28464,7 +28464,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Don\'t look too far up; \\pau=300\\ keep the neck aligned with the spine. \\pau=300\\\n")]]>
+		self.onStopped("Don\'t look too far up; \\pau=300\\ keep the neck aligned with the spine. \\pau=300\\\r\n")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -29839,7 +29839,7 @@ class MyClass(GeneratedClass):
               <Input name="onStop" type="1" type_size="1" nature="3" inner="0" tooltip="Box behavior stops when a signal is received on this input." id="3" />
               <Output name="onStopped" type="1" type_size="1" nature="1" inner="0" tooltip="Signal sent when box behavior is finished." id="4" />
             </Box>
-            <Box name="Chair" id="19" localization="8" tooltip="Enter description here" x="850" y="456">
+            <Box name="Chair" id="19" localization="8" tooltip="Enter description here" x="676" y="511">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -30374,7 +30374,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Think about squeezing your legs together as if they are one to make them stronger.  \\pau=300\\\nHowever, you can also bring your feet wider apart to make your base a little more stable if you need to.  \\pau=300\\")]]>
+		self.onStopped("Think about squeezing your legs together as if they are one to make them stronger.  \\pau=300\\\r\nHowever, you can also bring your feet wider apart to make your base a little more stable if you need to.  \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -30835,7 +30835,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Press firmly through the feet to create more lift in the upper body.  \\pau=300\\\nKeep the weight evenly distributed between the heels and the balls of the feet.  \\pau=300\\")]]>
+		self.onStopped("Press firmly through the feet to create more lift in the upper body.  \\pau=300\\\r\nKeep the weight evenly distributed between the heels and the balls of the feet.  \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -31296,7 +31296,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Practice the action in the legs first with your hands on your hips. \\pau=300\\ \nLengthening the spine is your main focus in the pose. \\pau=300\\")]]>
+		self.onStopped("Practice the action in the legs first with your hands on your hips. \\pau=300\\ \r\nLengthening the spine is your main focus in the pose. \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -31500,7 +31500,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Starting in Mountain pose or Tadasana as we did before: Stand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Your arms hang relaxed at your sides.  \\pau=300\\\nExhale as you bend your knees and move your hips back as if you were sitting down on a chair. \\pau=300\\\nDraw your lower abdomen in and up to support your lower back. \\pau=300\\\nSend your hips back rather than your knees forward, so that you can still see your toes. \\pau=300\\\nInhale as you raise your arms up around your ears and soften your shoulders. \\pau=300\\\nKeep reaching higher, while sitting lower \\pau=300\\\n\n\nHold this position for five breaths.  \\pau=300\\\n\n\n\nI\'ll count for you again.\n\n")]]>
+		self.onStopped("Starting in Mountain pose or Tadasana as we did before: Stand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Your arms hang relaxed at your sides.  \\pau=300\\\r\nExhale as you bend your knees and move your hips back as if you were sitting down on a chair. \\pau=300\\\r\nDraw your lower abdomen in and up to support your lower back. \\pau=300\\\r\nSend your hips back rather than your knees forward, so that you can still see your toes. \\pau=300\\\r\nInhale as you raise your arms up around your ears and soften your shoulders. \\pau=300\\\r\nKeep reaching higher, while sitting lower \\pau=300\\\r\n\r\n\r\nHold this position for five breaths.  \\pau=300\\\r\n\r\n\r\n\r\nI\'ll count for you again.\r\n\r\n")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -31918,7 +31918,7 @@ class MyClass(GeneratedClass):
                 </BehaviorLayer>
               </Timeline>
             </Box>
-            <Box name="Chair Reversed" id="20" localization="8" tooltip="Enter description here" x="847" y="592">
+            <Box name="Chair Reversed" id="20" localization="8" tooltip="Enter description here" x="673" y="647">
               <bitmap>media/images/box/box-diagram.png</bitmap>
               <script language="4">
                 <content>
@@ -32487,7 +32487,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Think about squeezing your legs together as if they are one to make them stronger.  \\pau=300\\\nHowever, you can also bring your feet wider apart to make your base a little more stable if you need to.  \\pau=300\\")]]>
+		self.onStopped("Think about squeezing your legs together as if they are one to make them stronger.  \\pau=300\\\r\nHowever, you can also bring your feet wider apart to make your base a little more stable if you need to.  \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -32948,7 +32948,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Press firmly through the feet to create more lift in the upper body.  \\pau=300\\\nKeep the weight evenly distributed between the heels and the balls of the feet.  \\pau=300\\")]]>
+		self.onStopped("Press firmly through the feet to create more lift in the upper body.  \\pau=300\\\r\nKeep the weight evenly distributed between the heels and the balls of the feet.  \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -33409,7 +33409,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Practice the action in the legs first with your hands on your hips. \\pau=300\\ \nLengthening the spine is your main focus in the pose. \\pau=300\\")]]>
+		self.onStopped("Practice the action in the legs first with your hands on your hips. \\pau=300\\ \r\nLengthening the spine is your main focus in the pose. \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -35990,7 +35990,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Think about squeezing your legs together as if they are one to make them stronger.  \\pau=300\\\nHowever, you can also bring your feet wider apart to make your base a little more stable if you need to.  \\pau=300\\")]]>
+		self.onStopped("Think about squeezing your legs together as if they are one to make them stronger.  \\pau=300\\\r\nHowever, you can also bring your feet wider apart to make your base a little more stable if you need to.  \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -36451,7 +36451,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Press firmly through the feet to create more lift in the upper body.  \\pau=300\\\nKeep the weight evenly distributed between the heels and the balls of the feet.  \\pau=300\\")]]>
+		self.onStopped("Press firmly through the feet to create more lift in the upper body.  \\pau=300\\\r\nKeep the weight evenly distributed between the heels and the balls of the feet.  \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -36912,7 +36912,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Practice the action in the legs first with your hands on your hips. \\pau=300\\ \nLengthening the spine is your main focus in the pose. \\pau=300\\")]]>
+		self.onStopped("Practice the action in the legs first with your hands on your hips. \\pau=300\\ \r\nLengthening the spine is your main focus in the pose. \\pau=300\\")]]>
                                                         </content>
                                                       </script>
                                                       <pluginContent>
@@ -37116,7 +37116,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Starting in Mountain pose or Tadasana as we did before: Stand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Your arms hang relaxed at your sides.  \\pau=300\\\nExhale as you bend your knees and move your hips back as if you were sitting down on a chair. \\pau=300\\\nDraw your lower abdomen in and up to support your lower back. \\pau=300\\\nSend your hips back rather than your knees forward, so that you can still see your toes. \\pau=300\\\nInhale as you raise your arms up around your ears and soften your shoulders. \\pau=300\\\nKeep reaching higher, while sitting lower \\pau=300\\\n\n\nHold this position for five breaths.  \\pau=300\\\n\n\n\nI\'ll count for you again.\n\n")]]>
+		self.onStopped("Starting in Mountain pose or Tadasana as we did before: Stand up straight with your feet hip-width apart. Make sure that your knees are not straight, but slightly bent. Your arms hang relaxed at your sides.  \\pau=300\\\r\nExhale as you bend your knees and move your hips back as if you were sitting down on a chair. \\pau=300\\\r\nDraw your lower abdomen in and up to support your lower back. \\pau=300\\\r\nSend your hips back rather than your knees forward, so that you can still see your toes. \\pau=300\\\r\nInhale as you raise your arms up around your ears and soften your shoulders. \\pau=300\\\r\nKeep reaching higher, while sitting lower \\pau=300\\\r\n\r\n\r\nHold this position for five breaths.  \\pau=300\\\r\n\r\n\r\n\r\nI\'ll count for you again.\r\n\r\n")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
@@ -37422,7 +37422,7 @@ class MyClass(GeneratedClass):
             <Link inputowner="15" indexofinput="2" outputowner="13" indexofoutput="3" />
             <Link inputowner="14" indexofinput="2" outputowner="22" indexofoutput="3" />
             <Link inputowner="6" indexofinput="2" outputowner="0" indexofoutput="2" />
-            <Link inputowner="15" indexofinput="2" outputowner="0" indexofoutput="2" />
+            <Link inputowner="16" indexofinput="2" outputowner="0" indexofoutput="2" />
           </Diagram>
         </BehaviorKeyframe>
       </BehaviorLayer>
