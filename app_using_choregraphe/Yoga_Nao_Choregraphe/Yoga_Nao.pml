@@ -15,6 +15,7 @@
         <File name="manifest" src="ReturnToInitialPosition/manifest.xml" />
         <File name="ReturnToInitialPosition" src="ReturnToInitialPosition/ReturnToInitialPosition.pml" />
         <File name="behavior_2" src="try_new_poses/behavior_2.xar" />
+        <File name="yoga_music" src="yoga_music.wav" />
     </Resources>
     <Topics />
     <IgnoredPaths />

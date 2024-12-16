@@ -662,7 +662,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Now, let\'s move on to another pose. \\pau=300\\ Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture. \\pau=1000\\\n\nIt creates awareness of muscles and balance. \\pau=1000\\")]]>
+		self.onStopped("Now, let\'s move on to another pose. \\pau=300\\ Warrior one is a powerful pose that strengthens the legs, arms and shoulders and improves posture. \\pau=1000\\\r\n\r\nIt creates awareness of muscles and balance. \\pau=1000\\")]]>
                           </content>
                         </script>
                         <pluginContent>
@@ -13654,7 +13654,7 @@ class MyClass(GeneratedClass):
                         <Output name="onStoppedBeforeArriving" type="0" type_size="1" nature="1" inner="0" tooltip="Signal sent when the robot stops before arriving to its destination. Returns a vector [x (m), y (m), theta(rad)] with the remaining distance up to the destination. This distance is expressed in the ROBOT frame." id="5" />
                         <Parameter name="Distance X (m)" inherits_from_parent="0" content_type="2" value="0" default_value="0.2" min="-5" max="10" tooltip="The distance in meters for forward/backward motion. Positive value&#x0A;means forward, negative value means backward." id="6" />
                         <Parameter name="Distance Y (m)" inherits_from_parent="0" content_type="2" value="0" default_value="0" min="-5" max="5" tooltip="The distance in meters for lateral motion. Positive value means left, negative&#x0A;value means right." id="7" />
-                        <Parameter name="Theta (deg)" inherits_from_parent="0" content_type="2" value="75" default_value="0" min="-180" max="180" tooltip="The orientation in degrees for final rotation. Positive value means anticlockwise,&#x0A;negative value means clockwise." id="8" />
+                        <Parameter name="Theta (deg)" inherits_from_parent="0" content_type="2" value="-75" default_value="0" min="-180" max="180" tooltip="The orientation in degrees for final rotation. Positive value means anticlockwise,&#x0A;negative value means clockwise." id="8" />
                         <Parameter name="Arms movement enabled" inherits_from_parent="0" content_type="0" value="1" default_value="1" tooltip="Enables natural motion of the arms." id="9" />
                         <Resource name="Legs" type="Lock" timeout="0" />
                       </Box>
@@ -30852,7 +30852,7 @@ class MyClass(GeneratedClass):
 		GeneratedClass.__init__(self)
 
 	def onInput_onStart(self):
-		self.onStopped("Let\'s go back to the Half Standing Forward pose. \\pau=300\\ \nFrom your sitting position, slowly stand up with your feet hip width apart. \\pau=1000\\ Root down through the feet, engage your legs, \\pau=300\\ draw the lower belly in and up, \\pau=300\\ and bend forward. Use your back muscles to bring your upper body almost parallel with the ground. \\pau=300\\\nDraw the shoulder blades down and create length through the spine, \\pau=300\\ from the tailbone to the top of the head. \\pau=300\\\nPlace your hands on your shins, or your fingertips on the floor.  \\pau=300\\\nLook forward, keeping the back of the neck long, \\pau=300\\ opening the front of the chest. ")]]>
+		self.onStopped("Let\'s go back to the Half Standing Forward pose. \\pau=300\\ \r\nFrom your sitting position, slowly stand up with your feet hip width apart. \\pau=1000\\ Root down through the feet, engage your legs, \\pau=300\\ draw the lower belly in and up, \\pau=300\\ and bend forward. Use your back muscles to bring your upper body almost parallel with the ground. \\pau=300\\\r\nDraw the shoulder blades down and create length through the spine, \\pau=300\\ from the tailbone to the top of the head. \\pau=300\\\r\nPlace your hands on your shins, or your fingertips on the floor.  \\pau=300\\\r\nLook forward, keeping the back of the neck long, \\pau=300\\ opening the front of the chest. ")]]>
                                     </content>
                                   </script>
                                   <pluginContent>
