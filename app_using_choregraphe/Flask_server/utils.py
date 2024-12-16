@@ -63,14 +63,14 @@ def compare_pose(image, angle_point, angle_user, angle_target):
     
     # In order of overall importance in alignment, balance and injury
     checks = [
-        ("left hip", "Extend the angle at left hip.", "Reduce the angle at left hip."),
-        ("right hip", "Extend the angle at right hip.", "Reduce the angle at right hip."),
-        ("left shoulder", "Lift your left arm.", "Put your left arm down a little."),
-        ("right shoulder", "Lift your right arm.", "Put your right arm down a little."),
-        ("left knee", "Extend the angle of left knee.", "Reduce the angle of left knee."),
-        ("right knee", "Extend the angle at right knee.", "Reduce the angle at right knee.")
         ("left elbow", "Extend the left arm at elbow.", "Fold the left arm at elbow."),
         ("right elbow", "Extend the right arm at elbow.", "Fold the right arm at elbow."),
+        ("left shoulder", "Lift your left arm.", "Put your left arm down a little."),
+        ("right shoulder", "Lift your right arm.", "Put your right arm down a little."),
+        ("left hip", "Extend the angle at left hip.", "Reduce the angle at left hip."),
+        ("right hip", "Extend the angle at right hip.", "Reduce the angle at right hip."),
+        ("left knee", "Extend the angle of left knee.", "Reduce the angle of left knee."),
+        ("right knee", "Extend the angle at right knee.", "Reduce the angle at right knee.")
     ]
     
     for i, (joint_name, msg_increase, msg_decrease) in enumerate(checks):
