@@ -249,9 +249,10 @@
     <context>
         <name>behavior_without_feedback/behavior.xar:/Outro/Say</name>
         <message>
+            <location filename="behavior_without_feedback/behavior.xar" line="0"/>
             <source>Bye Bye! See you!</source>
             <comment>Text</comment>
-            <translation type="obsolete">Bye Bye! See you!</translation>
+            <translation type="unfinished">Bye Bye! See you!</translation>
         </message>
     </context>
     <context>

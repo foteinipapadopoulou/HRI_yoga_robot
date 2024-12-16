@@ -220,10 +220,7 @@ def extractKeypoint(path):
 
                                       )
 
-            # cv2.imshow('MediaPipe Feed',image)
-
-            if cv2.waitKey(0) & 0xFF == ord('q'):
-                break
+            cv2.imshow('MediaPipe Feed',image)
 
         cv2.destroyAllWindows()
     return landmarks, keypoints, angle, image
@@ -268,16 +265,20 @@ def get_feedback(pose_name):
                 mp_pose.PoseLandmark.RIGHT_ANKLE, mp_pose.PoseLandmark.LEFT_ANKLE
             ]
 
-            # Check if all landmarks are visible
-            if not results.pose_landmarks:
-                cv2.destroyAllWindows()
-                return "No pose detected. Ensure your entire body is visible." 
-
             # check if all necessary landmarks are detected
             for landmark in necessary_landmarks:
                 if landmarks[landmark.value].visibility < 0.2:
                     cv2.destroyAllWindows()
-                    return "Ensure your entire body is visible."
+                    print("Ensure your entire body is visible.")
+                    return ""
+  
+            # check if all necessary landmarks are detected
+            for landmark in necessary_landmarks:
+                if landmarks[landmark.value].visibility < 0.2:
+                    cv2.destroyAllWindows()
+                    print("Ensure your entire body is visible.")
+                    return ""
+            
             image.flags.writeable = True
             image = cv2.cvtColor(image, cv2.COLOR_RGB2BGR)
             image_height, image_width, _ = image.shape
@@ -380,16 +381,16 @@ def get_feedback(pose_name):
                                     mp_drawing.DrawingSpec(color=(0, 255, 0), thickness=3, circle_radius=3)
                                     )
             cv2.imshow('MediaPipe Feed', image)
-
-            cv2.waitKey(10000)
+            cv2.waitKey(1)
             cv2.destroyAllWindows()
             if int((1 - p_score) * 100) >=85:
                 return np.random.choice(positive_messages)
             return message
         except:
             cv2.destroyAllWindows()
-            return "No human detected"
+            print("No human detected")
+            return ""
 
 
 if __name__ == '__main__':
-    print(get_feedback("tadasana"))
+    print(get_feedback("tadasana.jpg"))

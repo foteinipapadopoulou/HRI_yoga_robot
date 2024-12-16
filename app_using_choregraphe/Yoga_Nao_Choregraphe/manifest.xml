@@ -12,6 +12,7 @@
  <contents>
   <behaviorContent path="behavior_with_feedback">
    <nature>interactive</nature>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
   <behaviorContent path="try_new_poses">
@@ -20,6 +21,11 @@
   </behaviorContent>
   <behaviorContent path="ReturnToInitialPosition/behavior_1">
    <nature>interactive</nature>
+   <permissions/>
+  </behaviorContent>
+  <behaviorContent path="behavior_without_feedback">
+   <nature>interactive</nature>
+   <autonomous/>
    <permissions/>
   </behaviorContent>
  </contents>
