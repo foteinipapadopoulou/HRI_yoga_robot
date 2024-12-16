@@ -383,8 +383,8 @@ def get_feedback(pose_name):
             cv2.imshow('MediaPipe Feed', image)
             cv2.waitKey(1)
             cv2.destroyAllWindows()
-            if int((1 - p_score) * 100) >=85:
-                return np.random.choice(positive_messages)
+            # if int((1 - p_score) * 100) >= 85:
+            #     return np.random.choice(positive_messages)
             return message
         except:
             cv2.destroyAllWindows()

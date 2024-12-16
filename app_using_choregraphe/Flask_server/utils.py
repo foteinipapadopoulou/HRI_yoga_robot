@@ -57,122 +57,35 @@ def compare_pose(image, angle_point, angle_user, angle_target):
     cv2.rectangle(image, (0, 40), (370, 370), (255, 255, 255), -1)
     cv2.putText(image, str("Score:"), (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2, cv2.LINE_AA)
     height, width, _ = image.shape
-    message = ""
+    
+    feedback = []
     tolerance = 20
-    print(abs(angle_user[0] - angle_target[0]))
-    if angle_user[0] < (angle_target[0] - tolerance):
-        message += "Extend the left arm at elbow. "
-        stage = stage + 1
-        cv2.putText(image, str("Extend the left arm at elbow"), (10, 60), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[0][0] * width), int(angle_point[0][1] * height)), 30, (0, 0, 255), 5)
+    
+    # In order of overall importance in alignment, balance and injury
+    checks = [
+        ("left hip", "Extend the angle at left hip.", "Reduce the angle at left hip."),
+        ("right hip", "Extend the angle at right hip.", "Reduce the angle at right hip."),
+        ("left shoulder", "Lift your left arm.", "Put your left arm down a little."),
+        ("right shoulder", "Lift your right arm.", "Put your right arm down a little."),
+        ("left knee", "Extend the angle of left knee.", "Reduce the angle of left knee."),
+        ("right knee", "Extend the angle at right knee.", "Reduce the angle at right knee.")
+        ("left elbow", "Extend the left arm at elbow.", "Fold the left arm at elbow."),
+        ("right elbow", "Extend the right arm at elbow.", "Fold the right arm at elbow."),
+    ]
+    
+    for i, (joint_name, msg_increase, msg_decrease) in enumerate(checks):
+        if len(feedback) >= 2: # I chose to limit the feedback to 2 to reduce cognitive load and keep the rythm.
+            break
+        if angle_user[i] < (angle_target[i] - tolerance):
+            feedback.append(msg_increase)
+            cv2.putText(image, msg_increase, (10, 60 + 20 * len(feedback)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2, cv2.LINE_AA)
+            cv2.circle(image, (int(angle_point[i][0] * width), int(angle_point[i][1] * height)), 30, (0, 0, 255), 5)
+        elif angle_user[i] > (angle_target[i] + tolerance):
+            feedback.append(msg_decrease)
+            cv2.putText(image, msg_decrease, (10, 60 + 20 * len(feedback)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2, cv2.LINE_AA)
+            cv2.circle(image, (int(angle_point[i][0] * width), int(angle_point[i][1] * height)), 30, (0, 0, 255), 5)
 
-    if angle_user[0] > (angle_target[0] + tolerance):
-        message += "Fold the left arm at elbow. "
-        stage = stage + 1
-        cv2.putText(image, str("Fold the left arm at elbow"), (10, 80), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2,
-                    cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[0][0] * width), int(angle_point[0][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[1] < (angle_target[1] - tolerance):
-        message += "Extend the right arm at elbow. "
-        stage = stage + 1
-        cv2.putText(image, str("Extend the right arm at elbow"), (10, 100), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[1][0] * width), int(angle_point[1][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[1] > (angle_target[1] + tolerance):
-        message += "Fold the right arm at elbow. "
-        stage = stage + 1
-        cv2.putText(image, str("Fold the right arm at elbow"), (10, 120), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2,
-                    cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[1][0] * width), int(angle_point[1][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[2] < (angle_target[2] - 
-                        tolerance):
-        message += "Lift your left arm. " 
-        stage = stage + 1
-        cv2.putText(image, str("Lift your left arm"), (10, 140), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2,
-                    cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[2][0] * width), int(angle_point[2][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[2] > (angle_target[2] + tolerance):
-        message += "Put your left arm down a little. "
-        stage = stage + 1
-        cv2.putText(image, str("Put your left arm down a little"), (10, 160), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2,
-                    cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[2][0] * width), int(angle_point[2][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[3] < (angle_target[3] - tolerance):
-        message += "Lift your right arm. "
-        stage = stage + 1
-        cv2.putText(image, str("Lift your right arm"), (10, 180), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2,
-                    cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[3][0] * width), int(angle_point[3][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[3] > (angle_target[3] + tolerance):
-        message += "Put your lright arm down a little. "
-        stage = stage + 1
-        cv2.putText(image, str("Put your right arm down a little"), (10, 200), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2,
-                    cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[3][0] * width), int(angle_point[3][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[4] < (angle_target[4] - tolerance):
-        message += "Extend the angle at left hip. "
-        stage = stage + 1
-        cv2.putText(image, str("Extend the angle at left hip"), (10, 220), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[4][0] * width), int(angle_point[4][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[4] > (angle_target[4] + tolerance):
-        message += "Reduce the angle at left hip. "
-        stage = stage + 1
-        cv2.putText(image, str("Reduce the angle of at left hip"), (10, 240), cv2.FONT_HERSHEY_SIMPLEX, 0.7,
-                    [0, 153, 0], 2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[4][0] * width), int(angle_point[4][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[5] < (angle_target[5] - tolerance):
-        message += "Extend the angle at right hip. "
-        stage = stage + 1
-        cv2.putText(image, str("Extend the angle at right hip"), (10, 260), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[5][0] * width), int(angle_point[5][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[5] > (angle_target[5] + tolerance):
-        message += "Reduce the angle at right hip. "
-        stage = stage + 1
-        cv2.putText(image, str("Reduce the angle at right hip"), (10, 280), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[5][0] * width), int(angle_point[5][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[6] < (angle_target[6] - tolerance):
-        message += "Extend the angle of left knee. "
-        stage = stage + 1
-        cv2.putText(image, str("Extend the angle of left knee"), (10, 300), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[6][0] * width), int(angle_point[6][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[6] > (angle_target[6] + tolerance):
-        message += "Reduce the angle of left knee. "
-        stage = stage + 1
-        cv2.putText(image, str("Reduce the angle at left knee"), (10, 320), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[6][0] * width), int(angle_point[6][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[7] < (angle_target[7] - tolerance):
-        message += "Extend the angle at right knee. "
-        stage = stage + 1
-        cv2.putText(image, str("Extend the angle at right knee"), (10, 340), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[7][0] * width), int(angle_point[7][1] * height)), 30, (0, 0, 255), 5)
-
-    if angle_user[7] > (angle_target[7] + tolerance):
-        message += "Reduce the angle at right knee. "
-        stage = stage + 1
-        cv2.putText(image, str("Reduce the angle at right knee"), (10, 360), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0],
-                    2, cv2.LINE_AA)
-        cv2.circle(image, (int(angle_point[7][0] * width), int(angle_point[7][1] * height)), 30, (0, 0, 255), 5)
-    return message, stage
+    return " ".join(feedback), len(feedback)
 
 def get_pose_target_image(pose_name):
     return "images/" + poses[pose_name]["image_path"]
