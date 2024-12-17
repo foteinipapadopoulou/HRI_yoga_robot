@@ -63,17 +63,17 @@ def compare_pose(image, angle_point, angle_user, angle_target):
     
     # In order of overall importance in alignment, balance and injury
     checks = [
-        ("left elbow", "Extend the left arm at elbow.", "Fold the left arm at elbow."),
-        ("right elbow", "Extend the right arm at elbow.", "Fold the right arm at elbow."),
-        ("left shoulder", "Lift your left arm.", "Put your left arm down a little."),
-        ("right shoulder", "Lift your right arm.", "Put your right arm down a little."),
-        ("left hip", "Extend the angle at left hip.", "Reduce the angle at left hip."),
-        ("right hip", "Extend the angle at right hip.", "Reduce the angle at right hip."),
-        ("left knee", "Extend the angle of left knee.", "Reduce the angle of left knee."),
-        ("right knee", "Extend the angle at right knee.", "Reduce the angle at right knee.")
+        (4, "left hip", "Extend the angle at left hip.", "Reduce the angle at left hip."),
+        (5, "right hip", "Extend the angle at right hip.", "Reduce the angle at right hip."),
+        (2, "left shoulder", "Lift your left arm.", "Put your left arm down a little."),
+        (3, "right shoulder", "Lift your right arm.", "Put your right arm down a little."),
+        (6, "left knee", "Extend the angle of left knee.", "Reduce the angle of left knee."),
+        (7, "right knee", "Extend the angle at right knee.", "Reduce the angle at right knee.")
+        (0, "left elbow", "Extend the left arm at elbow.", "Fold the left arm at elbow."),
+        (1, "right elbow", "Extend the right arm at elbow.", "Fold the right arm at elbow."),
     ]
-    
-    for i, (joint_name, msg_increase, msg_decrease) in enumerate(checks):
+     
+    for i, joint_name, msg_increase, msg_decrease in checks:
         if len(feedback) >= 2: # I chose to limit the feedback to 2 to reduce cognitive load and keep the rythm.
             break
         if angle_user[i] < (angle_target[i] - tolerance):
@@ -84,7 +84,7 @@ def compare_pose(image, angle_point, angle_user, angle_target):
             feedback.append(msg_decrease)
             cv2.putText(image, msg_decrease, (10, 60 + 20 * len(feedback)), cv2.FONT_HERSHEY_SIMPLEX, 0.7, [0, 153, 0], 2, cv2.LINE_AA)
             cv2.circle(image, (int(angle_point[i][0] * width), int(angle_point[i][1] * height)), 30, (0, 0, 255), 5)
-
+    
     return " ".join(feedback), len(feedback)
 
 def get_pose_target_image(pose_name):
