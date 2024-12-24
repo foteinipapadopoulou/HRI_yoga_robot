@@ -1,6 +1,14 @@
 # A Yoga Instructor Robot for Stress Relief
 
-Use the instructions on `app_using_choregraphe/Flask_server` and  `app_using_choregraphe/Yoga_Nao_Choregraphe` folders to run the choregraphe implementation.
+This repository contains the code that was used to implement the Flask server for pose estimation and the behavior of NAO in Choreographe for the Human-Robot Interaction project.
 
-The previous implementation that uses python completely is stored in `app_using_naoqi_api` folder.
+Use the instructions on `Flask_server` and  `Yoga_Nao_Choregraphe` folders to run the code.
+
+
+![alt text](NAOImage.png)
+
+<small>Made by Loek Gerrits, Fotini Papadopoulou, Nicolo Sansevrino, Jet Verbeek</small>
+
+<small>Radboud University, Nijmegen</small>
+
 

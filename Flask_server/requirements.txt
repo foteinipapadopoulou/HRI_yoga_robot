@@ -1,0 +1,12 @@
+flask
+pandas
+opencv-python
+mediapipe
+numpy
+scipy
+matplotlib
+requests
+# transformers
+# torch
+# torchvision
+
