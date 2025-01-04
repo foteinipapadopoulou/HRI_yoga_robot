@@ -3,8 +3,6 @@
     <Manifest src="manifest.xml" />
     <BehaviorDescriptions>
         <BehaviorDescription name="behavior" src="behavior_with_feedback" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="try_new_poses" xar="behavior.xar" />
-        <BehaviorDescription name="behavior" src="ReturnToInitialPosition/behavior_1" xar="behavior.xar" />
         <BehaviorDescription name="behavior" src="behavior_without_feedback" xar="behavior.xar" />
     </BehaviorDescriptions>
     <Dialogs />
@@ -12,10 +10,6 @@
         <File name="icon" src="icon.png" />
         <File name="server_config" src="behavior_with_feedback/server_config.txt" />
         <File name="camera1" src="behavior_with_feedback/camera1.ogg" />
-        <File name="manifest" src="ReturnToInitialPosition/manifest.xml" />
-        <File name="ReturnToInitialPosition" src="ReturnToInitialPosition/ReturnToInitialPosition.pml" />
-        <File name="behavior_2" src="try_new_poses/behavior_2.xar" />
-        <File name="yoga_music" src="yoga_music.wav" />
     </Resources>
     <Topics />
     <IgnoredPaths />
