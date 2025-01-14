@@ -70,6 +70,15 @@
         </message>
     </context>
     <context>
+        <name>behavior_demo_with_feedback/behavior.xar:/Outro/Say</name>
+        <message>
+            <location filename="behavior_demo_with_feedback/behavior.xar" line="0"/>
+            <source>Bye Bye! See you!</source>
+            <comment>Text</comment>
+            <translation type="unfinished">Bye Bye! See you!</translation>
+        </message>
+    </context>
+    <context>
         <name>behavior_with_feedback/behavior.xar:/Ardha Uttanasana (1)/Say</name>
         <message>
             <source>Well done! Tadasana is an effective pose to improve your posture and relaxation. We continue with Virabhadrasana one, known as warrior one.</source>
@@ -249,9 +258,10 @@
     <context>
         <name>behavior_without_feedback/behavior.xar:/Outro/Say</name>
         <message>
+            <location filename="behavior_without_feedback/behavior.xar" line="0"/>
             <source>Bye Bye! See you!</source>
             <comment>Text</comment>
-            <translation type="obsolete">Bye Bye! See you!</translation>
+            <translation type="unfinished">Bye Bye! See you!</translation>
         </message>
     </context>
     <context>
